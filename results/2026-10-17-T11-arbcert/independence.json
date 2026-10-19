@@ -1,0 +1,29 @@
+{
+ "edges": [
+  "N1>N2",
+  "M+146>M+147"
+ ],
+ "forbidden_opened": [],
+ "forbidden_imported": [],
+ "repo_files_opened": [
+  "results/2026-10-15-T6-horseshoe/graph_design.json",
+  "tracks/T11-arbcert/certify_tubes.py",
+  "tracks/T11-arbcert/exact_judge.py",
+  "tracks/T11-arbcert/nbody_mp.py",
+  "tracks/T11-arbcert/rigorous_tube.py",
+  "tracks/T11-arbcert/scripts/stage2.py",
+  "tracks/T11-arbcert/v5/boxmap.py",
+  "tracks/T11-arbcert/v5/charts.py",
+  "tracks/T11-arbcert/v5/compare.py",
+  "tracks/T11-arbcert/v5/data.py",
+  "tracks/T11-arbcert/v5/edge.py",
+  "tracks/T11-arbcert/v5/flow.py",
+  "tracks/T11-arbcert/v5/jets.py",
+  "tracks/T11-arbcert/v5/margins.py",
+  "tracks/T11-arbcert/v5/taylor.py",
+  "tracks/T11-arbcert/v7exact.py"
+ ],
+ "mismatches": [],
+ "pass": true,
+ "seconds": 13.9
+}

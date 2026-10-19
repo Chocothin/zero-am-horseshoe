@@ -1,0 +1,1149 @@
+{
+ "tag": "G7 mutation 감사",
+ "summary": {
+  "t3cap/verdict.py": {
+   "mutants": 43,
+   "killed": 42,
+   "kill_rate": 0.9767
+  },
+  "t3cap/exact.py": {
+   "mutants": 69,
+   "killed": 69,
+   "kill_rate": 1.0
+  }
+ },
+ "survivors": [
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 84,
+   "operator": "call all->any",
+   "original": "all((len(row) == n for row in preconditioner))",
+   "mutated": "any((len(row) == n for row in preconditioner))",
+   "killed": false,
+   "pytest": "27 passed in 0.03s"
+  }
+ ],
+ "all": [
+  {
+   "file": "t3cap/verdict.py",
+   "function": "lower_bound_exceeds",
+   "line": 31,
+   "operator": "compare[0] Gt->GtE",
+   "original": "iv.lo > threshold",
+   "mutated": "iv.lo >= threshold",
+   "killed": true,
+   "pytest": "1 failed, 1 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "lower_bound_exceeds",
+   "line": 31,
+   "operator": "compare[0] Gt->Lt",
+   "original": "iv.lo > threshold",
+   "mutated": "iv.lo < threshold",
+   "killed": true,
+   "pytest": "1 failed, 1 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "subset_interior",
+   "line": 36,
+   "operator": "compare[0] NotEq->Eq",
+   "original": "len(inner) != len(outer)",
+   "mutated": "len(inner) == len(outer)",
+   "killed": true,
+   "pytest": "1 failed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "subset_interior",
+   "line": 38,
+   "operator": "call all->any",
+   "original": "all((o.lo < i.lo and i.hi < o.hi for i, o in zip(inner, outer)))",
+   "mutated": "any((o.lo < i.lo and i.hi < o.hi for i, o in zip(inner, outer)))",
+   "killed": true,
+   "pytest": "1 failed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 83,
+   "operator": "boolop And->swap",
+   "original": "len(df_box) == n and all((len(row) == n for row in df_box))",
+   "mutated": "len(df_box) == n or all((len(row) == n for row in df_box))",
+   "killed": true,
+   "pytest": "1 failed, 20 passed in 0.05s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 84,
+   "operator": "boolop And->swap",
+   "original": "len(preconditioner) == n and all((len(row) == n for row in preconditioner))",
+   "mutated": "len(preconditioner) == n or all((len(row) == n for row in preconditioner))",
+   "killed": true,
+   "pytest": "1 failed, 23 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 86,
+   "operator": "boolop Or->swap",
+   "original": "len(center) != n or len(f_center) != n or (not square) or (not square_c)",
+   "mutated": "len(center) != n and len(f_center) != n and (not square) and (not square_c)",
+   "killed": true,
+   "pytest": "1 failed, 18 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "verdict_of",
+   "line": 42,
+   "operator": "boolop And->swap",
+   "original": "all((c.passed for c in checks)) and len(checks) > 0",
+   "mutated": "all((c.passed for c in checks)) or len(checks) > 0",
+   "killed": true,
+   "pytest": "1 failed, 8 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 83,
+   "operator": "compare[0] Eq->NotEq",
+   "original": "len(df_box) == n",
+   "mutated": "len(df_box) != n",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 83,
+   "operator": "call all->any",
+   "original": "all((len(row) == n for row in df_box))",
+   "mutated": "any((len(row) == n for row in df_box))",
+   "killed": true,
+   "pytest": "1 failed, 20 passed in 0.05s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 84,
+   "operator": "compare[0] Eq->NotEq",
+   "original": "len(preconditioner) == n",
+   "mutated": "len(preconditioner) != n",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 84,
+   "operator": "call all->any",
+   "original": "all((len(row) == n for row in preconditioner))",
+   "mutated": "any((len(row) == n for row in preconditioner))",
+   "killed": false,
+   "pytest": "27 passed in 0.03s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 86,
+   "operator": "compare[0] NotEq->Eq",
+   "original": "len(center) != n",
+   "mutated": "len(center) == n",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 86,
+   "operator": "compare[0] NotEq->Eq",
+   "original": "len(f_center) != n",
+   "mutated": "len(f_center) == n",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 86,
+   "operator": "drop Not",
+   "original": "not square",
+   "mutated": "square",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 86,
+   "operator": "drop Not",
+   "original": "not square_c",
+   "mutated": "square_c",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 102,
+   "operator": "call all->any",
+   "original": "all((ch.passed for ch in checks))",
+   "mutated": "any((ch.passed for ch in checks))",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "_dot",
+   "line": 108,
+   "operator": "binop Add->Sub",
+   "original": "total + a * b",
+   "mutated": "total - a * b",
+   "killed": true,
+   "pytest": "1 failed, 16 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "subset_interior",
+   "line": 38,
+   "operator": "boolop And->swap",
+   "original": "o.lo < i.lo and i.hi < o.hi",
+   "mutated": "o.lo < i.lo or i.hi < o.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.03s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "verdict_of",
+   "line": 42,
+   "operator": "call all->any",
+   "original": "all((c.passed for c in checks))",
+   "mutated": "any((c.passed for c in checks))",
+   "killed": true,
+   "pytest": "1 failed, 8 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "verdict_of",
+   "line": 42,
+   "operator": "compare[0] Gt->GtE",
+   "original": "len(checks) > 0",
+   "mutated": "len(checks) >= 0",
+   "killed": true,
+   "pytest": "1 failed, 25 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "verdict_of",
+   "line": 42,
+   "operator": "compare[0] Gt->Lt",
+   "original": "len(checks) > 0",
+   "mutated": "len(checks) < 0",
+   "killed": true,
+   "pytest": "1 failed, 7 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "certify_return",
+   "line": 55,
+   "operator": "compare[0] GtE->Gt",
+   "original": "tube.t_end.lo >= result.return_time.hi",
+   "mutated": "tube.t_end.lo > result.return_time.hi",
+   "killed": true,
+   "pytest": "1 failed, 26 passed in 0.05s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "certify_return",
+   "line": 55,
+   "operator": "compare[0] GtE->LtE",
+   "original": "tube.t_end.lo >= result.return_time.hi",
+   "mutated": "tube.t_end.lo <= result.return_time.hi",
+   "killed": true,
+   "pytest": "1 failed, 7 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 89,
+   "operator": "binop Sub->Add",
+   "original": "x - c",
+   "mutated": "x + c",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 97,
+   "operator": "binop Add->Sub",
+   "original": "c - s + t",
+   "mutated": "c - s - t",
+   "killed": true,
+   "pytest": "1 failed, 16 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 99,
+   "operator": "call all->any",
+   "original": "all((b.contains(q) for b, q in zip(box, center)))",
+   "mutated": "any((b.contains(q) for b, q in zip(box, center)))",
+   "killed": true,
+   "pytest": "1 failed, 17 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "_dot",
+   "line": 106,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "_dot",
+   "line": 106,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "_dot",
+   "line": 108,
+   "operator": "binop Mult->Div",
+   "original": "a * b",
+   "mutated": "a / b",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "subset_interior",
+   "line": 38,
+   "operator": "compare[0] Lt->LtE",
+   "original": "o.lo < i.lo",
+   "mutated": "o.lo <= i.lo",
+   "killed": true,
+   "pytest": "1 failed in 0.03s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "subset_interior",
+   "line": 38,
+   "operator": "compare[0] Lt->Gt",
+   "original": "o.lo < i.lo",
+   "mutated": "o.lo > i.lo",
+   "killed": true,
+   "pytest": "1 failed in 0.03s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "subset_interior",
+   "line": 38,
+   "operator": "compare[0] Lt->LtE",
+   "original": "i.hi < o.hi",
+   "mutated": "i.hi <= o.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.03s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "subset_interior",
+   "line": 38,
+   "operator": "compare[0] Lt->Gt",
+   "original": "i.hi < o.hi",
+   "mutated": "i.hi > o.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.03s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "verdict_of",
+   "line": 42,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 25 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 83,
+   "operator": "compare[0] Eq->NotEq",
+   "original": "len(row) == n",
+   "mutated": "len(row) != n",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 84,
+   "operator": "compare[0] Eq->NotEq",
+   "original": "len(row) == n",
+   "mutated": "len(row) != n",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 97,
+   "operator": "binop Sub->Add",
+   "original": "c - s",
+   "mutated": "c + s",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "failed",
+   "line": 26,
+   "operator": "drop Not",
+   "original": "not c.passed",
+   "mutated": "c.passed",
+   "killed": true,
+   "pytest": "1 failed, 8 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "certify_return",
+   "line": 49,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 7 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "certify_return",
+   "line": 51,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 7 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "certify_return",
+   "line": 53,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 26 passed in 0.04s"
+  },
+  {
+   "file": "t3cap/verdict.py",
+   "function": "krawczyk",
+   "line": 93,
+   "operator": "binop Sub->Add",
+   "original": "Interval(eye[i][j], eye[i][j]) - c_df[i][j]",
+   "mutated": "Interval(eye[i][j], eye[i][j]) + c_df[i][j]",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.03s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "rmat_imat",
+   "line": 192,
+   "operator": "call any->all",
+   "original": "any((len(row) != len(b) for row in a))",
+   "mutated": "all((len(row) != len(b) for row in a))",
+   "killed": true,
+   "pytest": "1 failed, 11 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "round_down_double",
+   "line": 30,
+   "operator": "compare[0] LtE->Lt",
+   "original": "Fraction(f) <= q",
+   "mutated": "Fraction(f) < q",
+   "killed": true,
+   "pytest": "1 failed, 7 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "round_down_double",
+   "line": 30,
+   "operator": "compare[0] LtE->GtE",
+   "original": "Fraction(f) <= q",
+   "mutated": "Fraction(f) >= q",
+   "killed": true,
+   "pytest": "1 failed, 6 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "round_up_double",
+   "line": 35,
+   "operator": "compare[0] GtE->Gt",
+   "original": "Fraction(f) >= q",
+   "mutated": "Fraction(f) > q",
+   "killed": true,
+   "pytest": "1 failed, 6 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "round_up_double",
+   "line": 35,
+   "operator": "compare[0] GtE->LtE",
+   "original": "Fraction(f) >= q",
+   "mutated": "Fraction(f) <= q",
+   "killed": true,
+   "pytest": "1 failed, 6 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__post_init__",
+   "line": 57,
+   "operator": "boolop Or->swap",
+   "original": "not isinstance(self.lo, Fraction) or not isinstance(self.hi, Fraction)",
+   "mutated": "not isinstance(self.lo, Fraction) and (not isinstance(self.hi, Fraction))",
+   "killed": true,
+   "pytest": "1 failed, 8 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__post_init__",
+   "line": 59,
+   "operator": "compare[0] Gt->GtE",
+   "original": "self.lo > self.hi",
+   "mutated": "self.lo >= self.hi",
+   "killed": true,
+   "pytest": "1 error in 0.08s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__post_init__",
+   "line": 59,
+   "operator": "compare[0] Gt->Lt",
+   "original": "self.lo > self.hi",
+   "mutated": "self.lo < self.hi",
+   "killed": true,
+   "pytest": "1 error in 0.08s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains",
+   "line": 93,
+   "operator": "compare[0] LtE->Lt",
+   "original": "self.lo <= q <= self.hi",
+   "mutated": "self.lo < q <= self.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.05s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains",
+   "line": 93,
+   "operator": "compare[0] LtE->GtE",
+   "original": "self.lo <= q <= self.hi",
+   "mutated": "self.lo >= q <= self.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.04s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains",
+   "line": 93,
+   "operator": "compare[1] LtE->Lt",
+   "original": "self.lo <= q <= self.hi",
+   "mutated": "self.lo <= q < self.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.05s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains",
+   "line": 93,
+   "operator": "compare[1] LtE->GtE",
+   "original": "self.lo <= q <= self.hi",
+   "mutated": "self.lo <= q >= self.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.05s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains_interval",
+   "line": 96,
+   "operator": "boolop And->swap",
+   "original": "self.lo <= other.lo and other.hi <= self.hi",
+   "mutated": "self.lo <= other.lo or other.hi <= self.hi",
+   "killed": true,
+   "pytest": "1 failed, 9 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "strictly_contains_interval",
+   "line": 99,
+   "operator": "boolop And->swap",
+   "original": "self.lo < other.lo and other.hi < self.hi",
+   "mutated": "self.lo < other.lo or other.hi < self.hi",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "magnitude",
+   "line": 105,
+   "operator": "call max->min",
+   "original": "max(abs(self.lo), abs(self.hi))",
+   "mutated": "min(abs(self.lo), abs(self.hi))",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 163,
+   "operator": "binop Add->Sub",
+   "original": "list(row) + [Fraction(int(i == j)) for j in range(n)]",
+   "mutated": "list(row) - [Fraction(int(i == j)) for j in range(n)]",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 166,
+   "operator": "compare[0] Is->IsNot",
+   "original": "pivot is None",
+   "mutated": "pivot is not None",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 169,
+   "operator": "binop Div->Mult",
+   "original": "1 / a[col][col]",
+   "mutated": "1 * a[col][col]",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "_sum",
+   "line": 203,
+   "operator": "binop Add->Sub",
+   "original": "total + item",
+   "mutated": "total - item",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "round_down_double",
+   "line": 30,
+   "operator": "drop USub",
+   "original": "-math.inf",
+   "mutated": "math.inf",
+   "killed": true,
+   "pytest": "1 failed, 6 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__post_init__",
+   "line": 57,
+   "operator": "drop Not",
+   "original": "not isinstance(self.lo, Fraction)",
+   "mutated": "isinstance(self.lo, Fraction)",
+   "killed": true,
+   "pytest": "1 error in 0.08s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__post_init__",
+   "line": 57,
+   "operator": "drop Not",
+   "original": "not isinstance(self.hi, Fraction)",
+   "mutated": "isinstance(self.hi, Fraction)",
+   "killed": true,
+   "pytest": "1 error in 0.08s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains_interval",
+   "line": 96,
+   "operator": "compare[0] LtE->Lt",
+   "original": "self.lo <= other.lo",
+   "mutated": "self.lo < other.lo",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains_interval",
+   "line": 96,
+   "operator": "compare[0] LtE->GtE",
+   "original": "self.lo <= other.lo",
+   "mutated": "self.lo >= other.lo",
+   "killed": true,
+   "pytest": "1 failed, 9 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains_interval",
+   "line": 96,
+   "operator": "compare[0] LtE->Lt",
+   "original": "other.hi <= self.hi",
+   "mutated": "other.hi < self.hi",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "contains_interval",
+   "line": 96,
+   "operator": "compare[0] LtE->GtE",
+   "original": "other.hi <= self.hi",
+   "mutated": "other.hi >= self.hi",
+   "killed": true,
+   "pytest": "1 failed, 9 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "strictly_contains_interval",
+   "line": 99,
+   "operator": "compare[0] Lt->LtE",
+   "original": "self.lo < other.lo",
+   "mutated": "self.lo <= other.lo",
+   "killed": true,
+   "pytest": "1 failed, 9 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "strictly_contains_interval",
+   "line": 99,
+   "operator": "compare[0] Lt->Gt",
+   "original": "self.lo < other.lo",
+   "mutated": "self.lo > other.lo",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "strictly_contains_interval",
+   "line": 99,
+   "operator": "compare[0] Lt->LtE",
+   "original": "other.hi < self.hi",
+   "mutated": "other.hi <= self.hi",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "strictly_contains_interval",
+   "line": 99,
+   "operator": "compare[0] Lt->Gt",
+   "original": "other.hi < self.hi",
+   "mutated": "other.hi > self.hi",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "hull",
+   "line": 102,
+   "operator": "call min->max",
+   "original": "min(self.lo, other.lo)",
+   "mutated": "max(self.lo, other.lo)",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "hull",
+   "line": 102,
+   "operator": "call max->min",
+   "original": "max(self.hi, other.hi)",
+   "mutated": "min(self.hi, other.hi)",
+   "killed": true,
+   "pytest": "1 failed, 4 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__add__",
+   "line": 108,
+   "operator": "binop Add->Sub",
+   "original": "self.lo + other.lo",
+   "mutated": "self.lo - other.lo",
+   "killed": true,
+   "pytest": "1 failed in 0.05s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__add__",
+   "line": 108,
+   "operator": "binop Add->Sub",
+   "original": "self.hi + other.hi",
+   "mutated": "self.hi - other.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.04s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__sub__",
+   "line": 111,
+   "operator": "binop Sub->Add",
+   "original": "self.lo - other.hi",
+   "mutated": "self.lo + other.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.05s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__sub__",
+   "line": 111,
+   "operator": "binop Sub->Add",
+   "original": "self.hi - other.lo",
+   "mutated": "self.hi + other.lo",
+   "killed": true,
+   "pytest": "1 failed in 0.05s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__neg__",
+   "line": 114,
+   "operator": "drop USub",
+   "original": "-self.hi",
+   "mutated": "self.hi",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__neg__",
+   "line": 114,
+   "operator": "drop USub",
+   "original": "-self.lo",
+   "mutated": "self.lo",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__mul__",
+   "line": 117,
+   "operator": "binop Mult->Div",
+   "original": "self.lo * other.lo",
+   "mutated": "self.lo / other.lo",
+   "killed": true,
+   "pytest": "1 failed in 0.05s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__mul__",
+   "line": 117,
+   "operator": "binop Mult->Div",
+   "original": "self.lo * other.hi",
+   "mutated": "self.lo / other.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.05s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__mul__",
+   "line": 117,
+   "operator": "binop Mult->Div",
+   "original": "self.hi * other.lo",
+   "mutated": "self.hi / other.lo",
+   "killed": true,
+   "pytest": "1 failed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__mul__",
+   "line": 117,
+   "operator": "binop Mult->Div",
+   "original": "self.hi * other.hi",
+   "mutated": "self.hi / other.hi",
+   "killed": true,
+   "pytest": "1 failed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__mul__",
+   "line": 118,
+   "operator": "call min->max",
+   "original": "min(products)",
+   "mutated": "max(products)",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "__mul__",
+   "line": 118,
+   "operator": "call max->min",
+   "original": "max(products)",
+   "mutated": "min(products)",
+   "killed": true,
+   "pytest": "1 failed, 2 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "scale",
+   "line": 121,
+   "operator": "call min->max",
+   "original": "min(self.lo * q, self.hi * q)",
+   "mutated": "max(self.lo * q, self.hi * q)",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "scale",
+   "line": 121,
+   "operator": "call max->min",
+   "original": "max(self.lo * q, self.hi * q)",
+   "mutated": "min(self.lo * q, self.hi * q)",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 169,
+   "operator": "const 1->2",
+   "original": "1",
+   "mutated": "2",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 170,
+   "operator": "binop Mult->Div",
+   "original": "v * inv",
+   "mutated": "v / inv",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 172,
+   "operator": "boolop And->swap",
+   "original": "r != col and a[r][col] != 0",
+   "mutated": "r != col or a[r][col] != 0",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "rmat_imat",
+   "line": 192,
+   "operator": "compare[0] NotEq->Eq",
+   "original": "len(row) != len(b)",
+   "mutated": "len(row) == len(b)",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "rmat_imat",
+   "line": 194,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 17 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "_sum",
+   "line": 201,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "_sum",
+   "line": 201,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "scale",
+   "line": 121,
+   "operator": "binop Mult->Div",
+   "original": "self.lo * q",
+   "mutated": "self.lo / q",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "scale",
+   "line": 121,
+   "operator": "binop Mult->Div",
+   "original": "self.hi * q",
+   "mutated": "self.hi / q",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "scale",
+   "line": 121,
+   "operator": "binop Mult->Div",
+   "original": "self.lo * q",
+   "mutated": "self.lo / q",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "scale",
+   "line": 121,
+   "operator": "binop Mult->Div",
+   "original": "self.hi * q",
+   "mutated": "self.hi / q",
+   "killed": true,
+   "pytest": "1 failed, 3 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 172,
+   "operator": "compare[0] NotEq->Eq",
+   "original": "r != col",
+   "mutated": "r == col",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 172,
+   "operator": "compare[0] NotEq->Eq",
+   "original": "a[r][col] != 0",
+   "mutated": "a[r][col] == 0",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 165,
+   "operator": "compare[0] NotEq->Eq",
+   "original": "a[r][col] != 0",
+   "mutated": "a[r][col] == 0",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 172,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 174,
+   "operator": "binop Sub->Add",
+   "original": "v - factor * w",
+   "mutated": "v + factor * w",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "imat_vec",
+   "line": 184,
+   "operator": "binop Mult->Div",
+   "original": "m_ij * v_j",
+   "mutated": "m_ij / v_j",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 163,
+   "operator": "compare[0] Eq->NotEq",
+   "original": "i == j",
+   "mutated": "i != j",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 165,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "matrix_inverse",
+   "line": 174,
+   "operator": "binop Mult->Div",
+   "original": "factor * w",
+   "mutated": "factor / w",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "identity",
+   "line": 157,
+   "operator": "compare[0] Eq->NotEq",
+   "original": "i == j",
+   "mutated": "i != j",
+   "killed": true,
+   "pytest": "1 failed, 5 passed in 0.06s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "imat_vec",
+   "line": 184,
+   "operator": "const True->False",
+   "original": "True",
+   "mutated": "False",
+   "killed": true,
+   "pytest": "1 failed, 10 passed in 0.07s"
+  },
+  {
+   "file": "t3cap/exact.py",
+   "function": "rmat_ivec",
+   "line": 188,
+   "operator": "const True->False",
+   "original": "True",
+   "mutated": "False",
+   "killed": true,
+   "pytest": "1 failed, 10 passed in 0.06s"
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "tag": "[재계산·엄밀] arb 인증기 음성 대조와 표본 포함 대조",
+ "sample_containment": {
+  "points": 1060,
+  "violations": [],
+  "min_gaps": {
+   "lower": 2.487073834117258e-08,
+   "upper": 4.352559254591999e-08,
+   "tau_lo": 2.228807855907661e-12,
+   "tau_hi": 2.058290811944864e-12
+  },
+  "pass": true
+ },
+ "controls": [
+  {
+   "control": "skipped first crossing (plan 3x tau)",
+   "rejected": true,
+   "reason": "syzygy indicator not certified positive at t=0.27556299613570445+[0.0009844929691098514,0.001476739453664777]"
+  },
+  {
+   "control": "crossing planned mid-flight (plan 0.5x tau)",
+   "rejected": true,
+   "reason": "no undecided piece in crossing step at t=0.135233704593702"
+  },
+  {
+   "control": "start box shifted 3 radii per axis along sign(grad tau)=[1, 1, -1, 1]",
+   "rejected": true,
+   "reason": "window [0.276707990705433, 0.27670799099775767] vs unshifted [0.2767079902684478, 0.27670799056077244]"
+  },
+  {
+   "control": "delta claim raised to (1+1e-12) x my bound",
+   "rejected": true
+  },
+  {
+   "control": "R claim lowered to (1-1e-12) x my bound",
+   "rejected": true
+  },
+  {
+   "control": "t_min claim raised to (1+1e-12) x my bound",
+   "rejected": true
+  }
+ ],
+ "all_rejected": true,
+ "seconds": 1.3
+}

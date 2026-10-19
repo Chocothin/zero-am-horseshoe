@@ -1,0 +1,71 @@
+{
+ "tag": "G7",
+ "mutants": 294,
+ "killed": 287,
+ "kill_rate": 0.9761904761904762,
+ "survivors": [
+  {
+   "file": "t6hs/covering.py",
+   "function": "exit_face_out",
+   "line": 108,
+   "operator": "binop Mult->Div",
+   "original": "sign * side",
+   "mutated": "sign / side",
+   "killed": false
+  },
+  {
+   "file": "t6hs/covering.py",
+   "function": "exit_face_out",
+   "line": 109,
+   "operator": "compare Gt->GtE",
+   "original": "orientation > 0",
+   "mutated": "orientation >= 0",
+   "killed": false
+  },
+  {
+   "file": "t6hs/covering.py",
+   "function": "covering_verdict",
+   "line": 133,
+   "operator": "binop Mult->Div",
+   "original": "signs[0] * signs[1]",
+   "mutated": "signs[0] / signs[1]",
+   "killed": false
+  },
+  {
+   "file": "t6hs/covering.py",
+   "function": "certified_margin",
+   "line": 145,
+   "operator": "compare Gt->GtE",
+   "original": "signs[coord] * side > 0",
+   "mutated": "signs[coord] * side >= 0",
+   "killed": false
+  },
+  {
+   "file": "t6hs/covering.py",
+   "function": "certified_margin",
+   "line": 145,
+   "operator": "binop Mult->Div",
+   "original": "signs[coord] * side",
+   "mutated": "signs[coord] / side",
+   "killed": false
+  },
+  {
+   "file": "t6hs/assembly.py",
+   "function": "ln_lower_bound",
+   "line": 101,
+   "operator": "const 30->31",
+   "original": "30",
+   "mutated": "31",
+   "killed": false
+  },
+  {
+   "file": "t6hs/assembly.py",
+   "function": "rho_lower_bound",
+   "line": 94,
+   "operator": "compare Gt->GtE",
+   "original": "mid ** (-l1) + mid ** (-l2) > 1",
+   "mutated": "mid ** (-l1) + mid ** (-l2) >= 1",
+   "killed": false
+  }
+ ]
+}

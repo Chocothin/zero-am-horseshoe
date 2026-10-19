@@ -1,0 +1,2 @@
+# Result files are compared byte for byte with the sha256 in manifest.json, so line-ending conversion is disabled.
+results/** -text

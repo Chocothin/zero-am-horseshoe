@@ -1,0 +1,183 @@
+{
+ "tag": "[CAP 감싸기 폭] + [수치 2계 척도]",
+ "second_derivative_scale": {
+  "half_segment": 33.29655483892413,
+  "full_period": 298.60453246168817
+ },
+ "direct_full_period_from_benchmark": {
+  "1e-12": {
+   "rho": "1e-12",
+   "wall_seconds": 8.83,
+   "c0_image_width": 1.1837412268796264e-09,
+   "c0_growth": 591.8706134398132,
+   "c0_seconds": 3.96,
+   "tube_min": 1.7308133843591236,
+   "return_time_width": 9.593286165454629e-10,
+   "wrapping_excess": 44.90420000727487,
+   "c1_derivative_width": 0.001021896169446368,
+   "c1_seconds": 4.85,
+   "c1_overestimation": 1711119.655522108
+  },
+  "1e-10": {
+   "rho": "1e-10",
+   "wall_seconds": 8.87,
+   "c0_image_width": 6.828053372687672e-09,
+   "c0_growth": 34.140266863438356,
+   "c0_seconds": 3.98,
+   "tube_min": 1.7308133806480903,
+   "return_time_width": 6.156771092946656e-09,
+   "wrapping_excess": 2.5901630132097586,
+   "c1_derivative_width": 0.020621134915705497,
+   "c1_seconds": 4.87,
+   "c1_overestimation": 345291.7265807284
+  },
+  "1e-8": {
+   "rho": "1e-8",
+   "wall_seconds": 8.84,
+   "c0_image_width": 6.845102260531108e-07,
+   "c0_growth": 34.22551130265554,
+   "c0_seconds": 3.97,
+   "tube_min": 1.7308130088514808,
+   "return_time_width": 6.158476537621027e-07,
+   "wrapping_excess": 2.596630361412552,
+   "c1_derivative_width": 2.0583447743658456,
+   "c1_seconds": 4.85,
+   "c1_overestimation": 344660.67165774474
+  },
+  "1e-6": {
+   "rho": "1e-6",
+   "wall_seconds": 8.84,
+   "c0_image_width": 0.0007146348694011858,
+   "c0_growth": 357.3174347005929,
+   "c0_seconds": 3.96,
+   "tube_min": 1.7307705530555488,
+   "return_time_width": 0.0005340248356979771,
+   "wrapping_excess": 27.109055914487318,
+   "c1_derivative_width": 696.2658032390382,
+   "c1_seconds": 4.86,
+   "c1_overestimation": 1165866.099718984
+  },
+  "1e-5": {
+   "rho": "1e-5",
+   "wall_seconds": 14.97,
+   "c0": "FAIL: c0 hull poincare: Interval error:  sqrt(x): Interval x must be nonnegative. ",
+   "c1": "FAIL: c1 poincare: Interval error:  sqrt(x): Interval x must be nonnegative. "
+  },
+  "1e-4": {
+   "rho": "1e-4",
+   "wall_seconds": 2.19,
+   "c0": "FAIL: c0 hull poincare: PoincareMap error: possible nontransversal return to the section ",
+   "c1": "FAIL: c1 poincare: PoincareMap error: possible nontransversal return to the section "
+  },
+  "1e-3": {
+   "rho": "1e-3",
+   "wall_seconds": 27.53,
+   "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+   "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+  },
+  "1e-2": {
+   "rho": "1e-2",
+   "wall_seconds": 20.04,
+   "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+   "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+  }
+ },
+ "rows": [
+  {
+   "method": "set policy C1Rect2Set (half segment)",
+   "rho": "1/100000000",
+   "derivative_width": 0.00016562165271238882,
+   "overestimation": 248.70689101860896,
+   "seconds": 1.3,
+   "note": ""
+  },
+  {
+   "method": "set policy C1Pped2Set (half segment)",
+   "rho": "1/100000000",
+   "derivative_width": 0.0001667149537034618,
+   "overestimation": 250.34865395228474,
+   "seconds": 1.3,
+   "note": ""
+  },
+  {
+   "method": "set policy C1Horect2Set (half segment)",
+   "rho": "1/100000000",
+   "derivative_width": 0.00015578122359904967,
+   "overestimation": 233.92994313174296,
+   "seconds": 1.35,
+   "note": ""
+  },
+  {
+   "method": "set policy C1Rect2Set (half segment)",
+   "rho": "1/1000000",
+   "derivative_width": 0.016568064958917716,
+   "overestimation": 248.79548408337763,
+   "seconds": 0.77,
+   "note": ""
+  },
+  {
+   "method": "set policy C1Pped2Set (half segment)",
+   "rho": "1/1000000",
+   "derivative_width": 0.016700520208988046,
+   "overestimation": 250.78450743295684,
+   "seconds": 0.77,
+   "note": ""
+  },
+  {
+   "method": "set policy C1Horect2Set (half segment)",
+   "rho": "1/1000000",
+   "derivative_width": 0.015582378415734954,
+   "overestimation": 233.99385448609448,
+   "seconds": 0.82,
+   "note": ""
+  },
+  {
+   "method": "subdivision 2^4=16 pieces (half segment)",
+   "rho": "1/1000000",
+   "derivative_width": 0.008315834021769497,
+   "overestimation": 124.87529208349467,
+   "seconds": 4.52,
+   "note": "같은 상자 전체의 도함수 감싸기(조각 외피)"
+  },
+  {
+   "method": "subdivision 3^4=81 pieces (half segment)",
+   "rho": "1/1000000",
+   "derivative_width": 0.00556575497970746,
+   "overestimation": 83.57854148323202,
+   "seconds": 20.55,
+   "note": "같은 상자 전체의 도함수 감싸기(조각 외피)"
+  },
+  {
+   "method": "arithmetic double order 20 (half segment)",
+   "rho": "1/100000000",
+   "derivative_width": 0.00016562165271238882,
+   "overestimation": 248.70689101860896,
+   "seconds": 0.71,
+   "note": ""
+  },
+  {
+   "method": "arithmetic mp:128 order 30 (half segment)",
+   "rho": "1/100000000",
+   "derivative_width": 0.0001335461866933642,
+   "overestimation": 200.54054742211176,
+   "seconds": 27.94,
+   "note": ""
+  },
+  {
+   "method": "multiple shooting: product of 6 half-segment enclosures (full period)",
+   "rho": "1/10000000000",
+   "derivative_width": 0.941913943366159,
+   "overestimation": 15771929.776166564,
+   "seconds": 8.77,
+   "note": ""
+  },
+  {
+   "method": "multiple shooting: product of 6 half-segment enclosures (full period)",
+   "rho": "1/100000000",
+   "derivative_width": 108.45308836153264,
+   "overestimation": 18159986.967955265,
+   "seconds": 8.64,
+   "note": ""
+  }
+ ]
+}

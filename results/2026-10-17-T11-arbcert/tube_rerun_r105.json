@@ -1,0 +1,9 @@
+{
+ "tag": "R1-05 단언 뒤 흐름 관 314변 재실행의 재현 대조",
+ "compared_with": "results/2026-10-16-V2-compact/rigorous_tubes.json",
+ "fields": "실행 시간·CAPD 비교 칸을 뺀 모든 칸",
+ "identical": 314,
+ "differences": [],
+ "identical_with_pre_assert_t11": 314,
+ "differences_pre_assert": []
+}

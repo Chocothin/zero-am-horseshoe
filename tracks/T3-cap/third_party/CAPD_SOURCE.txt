@@ -1,0 +1,7 @@
+name=CAPD::DynSys (Computer Assisted Proofs in Dynamics)
+url=https://github.com/CAPDGroup/CAPD
+commit=2f060980d0685cc9bf88352e08c242197cd7d686
+version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag)
+license=GPL-3.0 (third_party/capd/COPYING)
+fetched=2026-10-15T06:14:55Z
+tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a

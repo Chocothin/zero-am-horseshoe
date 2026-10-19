@@ -1,0 +1,272 @@
+{
+ "tag": "R1 시험 공백: crossing_jets 의 f·τ_ab 항을 지운 변이 사본",
+ "mutation": {
+  "file": "v5/boxmap.py",
+  "original": "D2y[(a, b)] = [rest[c] + f[c] * tab for c in range(12)]",
+  "mutated": "D2y[(a, b)] = [rest[c] for c in range(12)]"
+ },
+ "mutant_runs": {
+  "new_G9_test_crossing_jets": {
+   "cmd": "-B -m pytest -q -p no:cacheprovider tests/test_crossing_jets_spec.py",
+   "exit": 1,
+   "tail": "09 * 2.0002214674332752e-23)\n\ntests/test_crossing_jets_spec.py:86: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_crossing_jets_spec.py::test_second_order_crossing_map_matches_finite_difference_cycle_edge\nFAILED tests/test_crossing_jets_spec.py::test_second_order_crossing_map_matches_finite_difference_chain_edge\n2 failed in 35.71s\n",
+   "seconds": 35.9
+  },
+  "V5_unit_tests": {
+   "cmd": "-B -m pytest -q -p no:cacheprovider tests/test_engine.py",
+   "exit": 0,
+   "tail": "........                                                                 [100%]\n8 passed in 1.56s\n",
+   "seconds": 1.7
+  },
+  "validate_engine_quick": {
+   "cmd": "-I -B scripts/validate_engine.py --quick",
+   "exit": 0,
+   "tail": "\n  \"rel_energy_contains_exact\": true,\n  \"rel_energy_rad\": 4.7013435664350964e-39\n },\n \"lagrange\": {\n  \"overlap_all\": true,\n  \"max_rad_mine\": 1.128629439941295e-43,\n  \"max_mid_error\": 2.1401596734153364e-54,\n  \"negative_control_shift_rejected_all\": true,\n  \"case\": \"Lagrange equilateral a=1.5, t=3.5\",\n  \"steps\": 134,\n  \"seconds\": 0.8\n },\n \"verdict\": {\n  \"kepler_ok\": true,\n  \"lagrange_ok\": true\n }\n}\n",
+   "seconds": 2.9
+  },
+  "V5_symmetry_test": {
+   "cmd": "-I -B v5_symmetry_test.py --out <tmp>/tmps3_dl34w/work/sym.json",
+   "exit": 0,
+   "tail": " W00(t) = -x(t) + T1(t)\": {\n   \"overlap\": true,\n   \"max_rad_enclosure\": 7.164789991520593e-06\n  },\n  \"boost_second: W33(t) = 0\": {\n   \"overlap\": true,\n   \"max_rad_enclosure\": 1.109119289195281e-11\n  }\n },\n \"negative_controls_rejected\": {\n  \"rotation_first_sign_flip\": true,\n  \"rotation_second_wrong(+x)\": true,\n  \"scaling_first_wrong_exponent(-1/2 t)\": true\n },\n \"all_pass\": true,\n \"seconds\": 35.4\n}\n",
+   "seconds": 35.5
+  }
+ },
+ "per_edge": [
+  {
+   "edge": "N0>N1",
+   "type": "cycle",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.9669432299695181,
+    16.435176555732994
+   ],
+   "g5_points": 5,
+   "g5_points_outside_mutant_enclosures": 0,
+   "failed_checks": {},
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 2,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 4
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "N1>N2",
+   "type": "cycle",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.06649353912242063,
+    0.9993706569680316
+   ],
+   "g5_points": 13,
+   "g5_points_outside_mutant_enclosures": 10,
+   "failed_checks": {
+    "deriv_in_DB": 31,
+    "image_in_mean_value": 5
+   },
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 16,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 126,
+    "image_in_mean_value": 10
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "N8>M-148",
+   "type": "junction_out",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.24564871720128698,
+    4.2491754617332695
+   ],
+   "g5_points": 53,
+   "g5_points_outside_mutant_enclosures": 29,
+   "failed_checks": {
+    "deriv_in_DB": 40
+   },
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 10,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 26
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "M-148>M-147",
+   "type": "back_tail",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.4962251908621657,
+    4.0136501842777905
+   ],
+   "g5_points": 4,
+   "g5_points_outside_mutant_enclosures": 0,
+   "failed_checks": {},
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 16,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 48
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "M-100>M-99",
+   "type": "back_tail",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.6316419566194156,
+    3.9227779728421535
+   ],
+   "g5_points": 4,
+   "g5_points_outside_mutant_enclosures": 0,
+   "failed_checks": {},
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 10,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 20
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "M-1>M+0",
+   "type": "excursion",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.6865778816543513,
+    1.6028692208714277
+   ],
+   "g5_points": 4,
+   "g5_points_outside_mutant_enclosures": 0,
+   "failed_checks": {},
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 8,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 14
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "M+0>M+1",
+   "type": "excursion",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.5927013114001878,
+    2.9643297423389163
+   ],
+   "g5_points": 4,
+   "g5_points_outside_mutant_enclosures": 0,
+   "failed_checks": {},
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 8,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 12
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "M+100>M+101",
+   "type": "front_tail",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.6212994359226741,
+    1.6826251336627749
+   ],
+   "g5_points": 4,
+   "g5_points_outside_mutant_enclosures": 0,
+   "failed_checks": {},
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 10,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 22
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "M+146>M+147",
+   "type": "front_tail",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.6371521113714994,
+    10.229106270321415
+   ],
+   "g5_points": 4,
+   "g5_points_outside_mutant_enclosures": 1,
+   "failed_checks": {
+    "deriv_in_DB": 1
+   },
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 12,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 22
+   },
+   "vertex_points_outside_original": 0
+  },
+  {
+   "edge": "M+148>N8",
+   "type": "junction_in",
+   "mutant_cover_proven": true,
+   "mutant_cone_proven": true,
+   "max_center_shift_of_D(B)": 0.0,
+   "D(B)_width_ratio_mutant_over_original": [
+    0.627052379092155,
+    2.380246271426404
+   ],
+   "g5_points": 53,
+   "g5_points_outside_mutant_enclosures": 5,
+   "failed_checks": {
+    "deriv_in_DB": 15
+   },
+   "vertex_points": 16,
+   "vertex_points_outside_mutant": 12,
+   "vertex_failed_checks": {
+    "deriv_in_DB": 36
+   },
+   "vertex_points_outside_original": 0
+  }
+ ],
+ "g5_points_total": 148,
+ "g5_points_catching_mutant": 45,
+ "vertex_points_total": 160,
+ "vertex_points_catching_mutant": 104,
+ "vertex_points_outside_original": 0,
+ "types_caught_by_g5_random": [
+  "cycle",
+  "front_tail",
+  "junction_in",
+  "junction_out"
+ ],
+ "types_caught_by_vertices": [
+  "back_tail",
+  "cycle",
+  "excursion",
+  "front_tail",
+  "junction_in",
+  "junction_out"
+ ],
+ "seconds": 367.2,
+ "summary": {
+  "new_G9_test_crossing_jets": 1,
+  "V5_unit_tests": 0,
+  "validate_engine_quick": 0,
+  "V5_symmetry_test": 0
+ }
+}

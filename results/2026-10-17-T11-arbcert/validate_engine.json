@@ -1,0 +1,26 @@
+{
+ "kepler": {
+  "overlap_all": true,
+  "max_rad_mine": 6.771836091866916e-39,
+  "max_mid_error": 3.488122869837669e-48,
+  "negative_control_shift_rejected_all": true,
+  "case": "Kepler e=0.6 a=1 GM=2, t=7.25",
+  "steps": 555,
+  "seconds": 1.8,
+  "rel_energy_contains_exact": true,
+  "rel_energy_rad": 4.7013435664350964e-39
+ },
+ "lagrange": {
+  "overlap_all": true,
+  "max_rad_mine": 1.128629439941295e-43,
+  "max_mid_error": 2.1401596734153364e-54,
+  "negative_control_shift_rejected_all": true,
+  "case": "Lagrange equilateral a=1.5, t=3.5",
+  "steps": 134,
+  "seconds": 0.8
+ },
+ "verdict": {
+  "kepler_ok": true,
+  "lagrange_ok": true
+ }
+}

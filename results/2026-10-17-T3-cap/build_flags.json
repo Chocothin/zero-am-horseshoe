@@ -1,0 +1,56 @@
+{
+ "tag": "빌드 확인: 융합 금지 플래그와 바이너리의 융합 명령 수",
+ "required_flags": [
+  "-ffp-contract=off",
+  "-frounding-math"
+ ],
+ "strict": {
+  "native-strict": {
+   "arch": "arm64",
+   "capd_compile_commands": {
+    "entries": 129,
+    "missing_flags": []
+   },
+   "engine_compile_commands": {
+    "t3cap_engine": true,
+    "arith_selftest": true,
+    "compiler_probe": true,
+    "c1_mitigation": true
+   },
+   "fused_instructions": {
+    "t3cap_engine": 0,
+    "libcapd.a": 0
+   }
+  },
+  "x86filib-strict": {
+   "arch": "x86_64",
+   "capd_compile_commands": {
+    "entries": 90,
+    "missing_flags": []
+   },
+   "engine_compile_commands": {
+    "t3cap_engine": true,
+    "arith_selftest": true,
+    "compiler_probe": true,
+    "c1_mitigation": true
+   },
+   "fused_instructions": {
+    "t3cap_engine": 0,
+    "libcapd.a": 0,
+    "libfilib.a": 0
+   }
+  }
+ },
+ "legacy_for_comparison": {
+  "native": {
+   "t3cap_engine": 1204,
+   "libcapd.a": 5376
+  },
+  "x86filib": {
+   "t3cap_engine": 0,
+   "libcapd.a": 0,
+   "libfilib.a": 0
+  }
+ },
+ "problems": []
+}

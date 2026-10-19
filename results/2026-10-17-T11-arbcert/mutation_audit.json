@@ -1,0 +1,205 @@
+{
+ "tag": "G7 mutation 감사(판정 함수 + 조립층)",
+ "targets": {
+  "v7exact.py": "전체",
+  "exact_judge.py": [
+   "design_signs",
+   "judge_v5"
+  ],
+  "t11/claims.py": [
+   "epsilon",
+   "judge_claims"
+  ],
+  "t11/assemble.py": [
+   "assemble",
+   "edge_verdict",
+   "expected_edges",
+   "hull_gaps",
+   "load_records",
+   "structure_failures"
+  ]
+ },
+ "tests": [
+  "tests/test_judge_spec.py",
+  "tests/test_claims_spec.py",
+  "tests/test_assemble_spec.py",
+  "tests/test_guards_spec.py"
+ ],
+ "mutants": 403,
+ "killed": 386,
+ "kill_rate": 0.9578163771712159,
+ "per_file": {
+  "v7exact.py": {
+   "mutants": 149,
+   "killed": 137
+  },
+  "exact_judge.py": {
+   "mutants": 58,
+   "killed": 55
+  },
+  "t11/claims.py": {
+   "mutants": 97,
+   "killed": 96
+  },
+  "t11/assemble.py": {
+   "mutants": 99,
+   "killed": 98
+  }
+ },
+ "survivors": [
+  {
+   "file": "v7exact.py",
+   "function": "sq",
+   "line": 56,
+   "operator": "compare GtE->Gt",
+   "original": "lo >= 0",
+   "mutated": "lo > 0",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "sq",
+   "line": 58,
+   "operator": "compare LtE->Lt",
+   "original": "hi <= 0",
+   "mutated": "hi < 0",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "gershgorin",
+   "line": 95,
+   "operator": "const 1->2",
+   "original": "1",
+   "mutated": "2",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "gershgorin",
+   "line": 95,
+   "operator": "const 1->2",
+   "original": "1",
+   "mutated": "2",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "gershgorin",
+   "line": 97,
+   "operator": "const 4->5",
+   "original": "4",
+   "mutated": "5",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "gershgorin",
+   "line": 95,
+   "operator": "const 1->2",
+   "original": "1",
+   "mutated": "2",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "gershgorin",
+   "line": 95,
+   "operator": "const 1->2",
+   "original": "1",
+   "mutated": "2",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "gershgorin",
+   "line": 96,
+   "operator": "const 4->5",
+   "original": "4",
+   "mutated": "5",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "cover_margins",
+   "line": 117,
+   "operator": "compare Gt->GtE",
+   "original": "signs[j] * s > 0",
+   "mutated": "signs[j] * s >= 0",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "gershgorin",
+   "line": 96,
+   "operator": "const 4->5",
+   "original": "4",
+   "mutated": "5",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "cover_margins",
+   "line": 117,
+   "operator": "binop Mult->Div",
+   "original": "signs[j] * s",
+   "mutated": "signs[j] / s",
+   "killed": false
+  },
+  {
+   "file": "v7exact.py",
+   "function": "gershgorin",
+   "line": 102,
+   "operator": "compare Gt->GtE",
+   "original": "J[k] > 0",
+   "mutated": "J[k] >= 0",
+   "killed": false
+  },
+  {
+   "file": "exact_judge.py",
+   "function": "judge_v5",
+   "line": 53,
+   "operator": "const 4->5",
+   "original": "4",
+   "mutated": "5",
+   "killed": false
+  },
+  {
+   "file": "exact_judge.py",
+   "function": "design_signs",
+   "line": 37,
+   "operator": "compare Gt->GtE",
+   "original": "v > 0",
+   "mutated": "v >= 0",
+   "killed": false
+  },
+  {
+   "file": "exact_judge.py",
+   "function": "judge_v5",
+   "line": 52,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": false
+  },
+  {
+   "file": "t11/claims.py",
+   "function": "judge_claims",
+   "line": 115,
+   "operator": "compare Lt->LtE",
+   "original": "0 < ls < 1",
+   "mutated": "0 <= ls < 1",
+   "killed": false
+  },
+  {
+   "file": "t11/assemble.py",
+   "function": "assemble",
+   "line": 116,
+   "operator": "const 0->1",
+   "original": "0",
+   "mutated": "1",
+   "killed": false
+  }
+ ],
+ "seconds": 317.3
+}

@@ -1,0 +1,99 @@
+{
+ "tag": "G5 [CAP 건전성 시험]",
+ "dps": 32,
+ "fd_step": "1.0e-10",
+ "configs": [
+  {
+   "config": "f8-period-c0",
+   "mode": "c0",
+   "points": 1000,
+   "violations": 0,
+   "min_relative_margin": 0.2631798483980351,
+   "max_image_width": 1.161085702619586e-05,
+   "negative_control_shifted_by_width_detected": 1000,
+   "tightness_points_outside_central_20pct": 392,
+   "tester_blind": false,
+   "examples": [],
+   "seconds": 417.7
+  },
+  {
+   "config": "f8-half-c1",
+   "mode": "c1",
+   "points": 1000,
+   "violations": 0,
+   "min_relative_margin": 0.11711024993533382,
+   "max_image_width": 4.885386058761654e-05,
+   "negative_control_shifted_by_width_detected": 1000,
+   "tightness_points_outside_central_20pct": 831,
+   "tester_blind": false,
+   "examples": [],
+   "seconds": 631.7
+  },
+  {
+   "config": "f8-tilted-frames-c1",
+   "mode": "c1",
+   "points": 1000,
+   "violations": 0,
+   "min_relative_margin": 0.21227000666755685,
+   "max_image_width": 6.840779516235424e-05,
+   "negative_control_shifted_by_width_detected": 1000,
+   "tightness_points_outside_central_20pct": 615,
+   "tester_blind": false,
+   "examples": [],
+   "seconds": 634.3
+  },
+  {
+   "config": "f8-interval-params-c0",
+   "mode": "c0",
+   "points": 1000,
+   "violations": 0,
+   "min_relative_margin": 0.45946763414906927,
+   "max_image_width": 0.0006501846367275022,
+   "negative_control_shifted_by_width_detected": 1000,
+   "tightness_points_outside_central_20pct": 0,
+   "tester_blind": false,
+   "examples": [],
+   "seconds": 72.1
+  },
+  {
+   "config": "f8-half-c0-x86filib",
+   "mode": "c0",
+   "points": 1000,
+   "violations": 0,
+   "min_relative_margin": 0.1254757857136925,
+   "max_image_width": 0.0004918023287117101,
+   "negative_control_shifted_by_width_detected": 1000,
+   "tightness_points_outside_central_20pct": 826,
+   "tester_blind": false,
+   "examples": [],
+   "seconds": 71.8
+  },
+  {
+   "config": "f8-off-section-to-pr-max-c1",
+   "mode": "c1",
+   "points": 1000,
+   "violations": 0,
+   "min_relative_margin": 0.1825816068523118,
+   "max_image_width": 0.00013881736305991425,
+   "negative_control_shifted_by_width_detected": 1000,
+   "tightness_points_outside_central_20pct": 564,
+   "tester_blind": false,
+   "examples": [],
+   "seconds": 1883.1
+  },
+  {
+   "config": "bf1-first-return-c0",
+   "mode": "c0",
+   "points": 1000,
+   "violations": 0,
+   "min_relative_margin": 0.4629519418813622,
+   "max_image_width": 1.2942731412834974e-05,
+   "negative_control_shifted_by_width_detected": 1000,
+   "tightness_points_outside_central_20pct": 0,
+   "tester_blind": false,
+   "examples": [],
+   "seconds": 456.8
+  }
+ ],
+ "critical": 0
+}

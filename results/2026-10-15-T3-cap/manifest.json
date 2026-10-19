@@ -1,0 +1,506 @@
+{
+ "track": "T3-cap",
+ "entries": {
+  "figure8_newton": {
+   "output": "figure8_newton.json",
+   "output_sha256": "fa510be026969c5f7ed2d4949e62e3b6797bc10ca6e7bfa0d2e75af87984e730",
+   "script": "tracks/T3-cap/scripts/figure8_newton.py",
+   "script_sha256": "bc1dd9aa7434e37cfa72dca629ea1d51312fa9f87255f77d37386d355d42101e",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "dps": 40,
+    "energy": "-1/2",
+    "start": "Simo IC scaled to h=-1/2"
+   },
+   "seconds": 22.23,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "milestone_figure8": {
+   "output": "milestone_figure8.json",
+   "output_sha256": "94027c1b60c8ca31f1971c5cf8c9b7d731c517a081d587f805e358b246a9b6ec",
+   "script": "tracks/T3-cap/scripts/milestone_figure8.py",
+   "script_sha256": "79e376b52d783850dda779846c848594bf457020e65013b8185e535261054d1a",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "quick": false,
+    "rho": "1/1000000000",
+    "energy": "-1/2",
+    "J": "0",
+    "masses": "1,1,1"
+   },
+   "seconds": 158.61,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "g5_soundness": {
+   "output": "g5_soundness.json",
+   "output_sha256": "cde4f2029d7b05c0ddf42dc9249dc24e0de257d67ed8726aed347c886686b771",
+   "script": "tracks/T3-cap/scripts/g5_soundness.py",
+   "script_sha256": "069eff1bcb9f7137bdf1b3d67914a28e7c1f4e6d79cf54bd07e8e88fff70f06d",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "points": 1000,
+    "dps": 32
+   },
+   "seconds": 4167.45,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "mutation_audit": {
+   "output": "mutation_audit.json",
+   "output_sha256": "91e45d139c0f3d5520bfeb57cccddb95869580e566f536b0b7501e7cb8d8b168",
+   "script": "tracks/T3-cap/scripts/mutation_audit.py",
+   "script_sha256": "7508f065b8eda8b20f365b6a7ebcffcf4976338e837aa3ed3482409373975e4a",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "targets": [
+     "t3cap/verdict.py",
+     "t3cap/exact.py"
+    ]
+   },
+   "seconds": 7.78,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "orbit_butterfly1": {
+   "output": "orbit_butterfly1.json",
+   "output_sha256": "957c5612180b4f836fdc59d81f5e317e885bd2df95d1f8d8c074f3390acfeb8e",
+   "script": "tracks/T3-cap/scripts/find_periodic_orbit.py",
+   "script_sha256": "3d3d53f929b7f0dbc07c9a719e32feb60e17b87dbd75d92861a2c37a577df67a",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "name": "butterfly1",
+    "vx": "0.30689",
+    "vy": "0.12551",
+    "period": "6.2356",
+    "dps": 40
+   },
+   "seconds": 251.21,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "orbit_moth1": {
+   "output": "orbit_moth1.json",
+   "output_sha256": "81b38d01e52544c8017027f2991d93cc15c5826d087b4338a82ec9a5c7631807",
+   "script": "tracks/T3-cap/scripts/find_periodic_orbit.py",
+   "script_sha256": "3d3d53f929b7f0dbc07c9a719e32feb60e17b87dbd75d92861a2c37a577df67a",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "name": "moth1",
+    "vx": "0.46444",
+    "vy": "0.39606",
+    "period": "14.8939",
+    "dps": 40
+   },
+   "seconds": 153.34,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "orbit_yinyang1b": {
+   "output": "orbit_yinyang1b.json",
+   "output_sha256": "686e0eb8e168f9018c96663843a64792877359f6c02ca0d5451f75d216dec804",
+   "script": "tracks/T3-cap/scripts/find_periodic_orbit.py",
+   "script_sha256": "3d3d53f929b7f0dbc07c9a719e32feb60e17b87dbd75d92861a2c37a577df67a",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "name": "yinyang1b",
+    "vx": "0.28270",
+    "vy": "0.32721",
+    "period": "10.9626",
+    "dps": 40
+   },
+   "seconds": 249.58,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "orbit_butterfly2": {
+   "output": "orbit_butterfly2.json",
+   "output_sha256": "367608f7ee0c5ca5c97124628ffd59bb4597bdd00e3a303520777e34eaf17513",
+   "script": "tracks/T3-cap/scripts/find_periodic_orbit.py",
+   "script_sha256": "3d3d53f929b7f0dbc07c9a719e32feb60e17b87dbd75d92861a2c37a577df67a",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "name": "butterfly2",
+    "vx": "0.39295",
+    "vy": "0.09758",
+    "period": "7.0039",
+    "dps": 40
+   },
+   "seconds": 373.04,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "benchmark": {
+   "output": "benchmark.json",
+   "output_sha256": "7b01d688214d3f8b035547f4dc769cbd2baff59f50833069471532b0b4200c41",
+   "script": "tracks/T3-cap/scripts/benchmark.py",
+   "script_sha256": "98c4aac22b6c16388e91aa31b4443945a73885c7440a167d0689800bf68f665e",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "radii": [
+     "1/1000000000000",
+     "1/10000000000",
+     "1/100000000",
+     "1/1000000",
+     "1/100000",
+     "1/10000",
+     "1/1000",
+     "1/100"
+    ],
+    "orbits": "butterfly1"
+   },
+   "seconds": 263.32,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "arb_krawczyk": {
+   "output": "arb_krawczyk.json",
+   "output_sha256": "8da8d84ed19ba2ec16c26a6253f343ae56c8e39151be27fa51c1307b8370f9c5",
+   "script": "tracks/T3-cap/scripts/arb_krawczyk.py",
+   "script_sha256": "6881078d35fbb67a3b76442152d0ffe00a208772d01db18e29fa092c5b0be0d1",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "prec_bits": 256,
+    "extra_code_sha256": {
+     "reference/arb_flow.py": "3f9e3c6d21c17a52a509fc8322a9c2c78b922dac7bcf52c59bcd61d6082edd0d"
+    }
+   },
+   "seconds": 18.06,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "capd_selftests": {
+   "output": "capd_selftests.json",
+   "output_sha256": "29c76310bf71f9c966819bd9c1f3a66c94f33f15a7ba646e77d678820f6756ce",
+   "script": "tracks/T3-cap/scripts/capd_selftests.py",
+   "script_sha256": "def873058289676d75f3514981a4c1933300b4b0712e8c2f02198dd0a9152f7b",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "jobs": "2",
+    "build_dir": "build/capd-native-tests"
+   },
+   "seconds": 123.4,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "engine_mutation_audit": {
+   "output": "engine_mutation_audit.json",
+   "output_sha256": "d3d01e6ffbb0a898cdecbcc765d0068bc86ff3a8b3ff1e3c78256ba2670545c0",
+   "script": "tracks/T3-cap/scripts/engine_mutation_audit.py",
+   "script_sha256": "76617facf6056869c3978673e97f4be02bb62971d1423000f178cb6cc84359e0",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "71d73e7dae3b9a08a6c61fe7fa677893faa392d6",
+   "params": {
+    "workers": 2,
+    "extra_code_sha256": {
+     "build_engine.sh": "0b4ec5fff6057cbe590b0be26a5dff88daf54be0dcfb91083bcee3dd1bcdc883",
+     "engine_tests/crossing_counter_test.cpp": "4762da86185854c9ab710f9d9268a558362bce47f25a5f4fd236c274c0eb09d7"
+    }
+   },
+   "seconds": 421.01,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "c1_mitigation": {
+   "output": "c1_mitigation.json",
+   "output_sha256": "3200f7040d7be3a3c371c44a8514f8ab92feed3305011f754d3a4c50a84279c2",
+   "script": "tracks/T3-cap/scripts/c1_mitigation.py",
+   "script_sha256": "8719e773040667ee547efc512431cb12fd4b25e6926f07fd8cc0a9402288e591",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "bcbcd3859cf0dcf09810be42e69770459a5e9529",
+   "params": {
+    "max_processes": 3,
+    "extra_code_sha256": {
+     "engine/c1_mitigation.cpp": "14391d6005374436052dcab5ee4fe639c6aaa2e825b52ebfe80ffe009e623840"
+    }
+   },
+   "seconds": 73.42,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  },
+  "g5_prefix_trap2": {
+   "output": "g5_prefix_trap2.json",
+   "output_sha256": "a6e052656507fda8da3630b09a3cc8b5b9c0653904f22b1cd3097169b75e58fc",
+   "script": "tracks/T3-cap/scripts/trap2_prefix_evidence.py",
+   "script_sha256": "6da9efba1755c80e5e4c4856eb30a22599f6204a614479d8d84bc9ed0ebf880d",
+   "code_sha256": {
+    "engine/t3cap_engine.cpp": "a34e023f6d2049cb2f0fc464fc554e10784c8a3581789d4bc5386895bf791079",
+    "t3cap/api.py": "ccf0b766d83222b26a76c65e7576c69d36f09c8e0b4b24cdaa6f73b167ee6b22",
+    "t3cap/engine.py": "3b41d5f17616e21130455391f0c37118324cac2adf5debab063c2aa3b9b4301e",
+    "t3cap/exact.py": "3a8558e8c5ba342e5cd99f1f5878335788766e1e18b65e3d8d7b899578622f1b",
+    "t3cap/model.py": "bdcb0524e1ee7a8914637a3602a7ebd2bb7be99268623cf7b3639ceb48bf62b9",
+    "t3cap/verdict.py": "26d01b8648b962eb5bed91b4268a77d29957dc9e8e3ac302bca3c99638cc7467",
+    "t3cap/coords.py": "188b83cac3d23b8d598e1f5cf9f0b2bb0156f16bb70c2114c49a43d10fc19a8d",
+    "t3cap/export.py": "5f81b53d7639ee71b5ec16ff613059eb088ebdc7e13c3b669bb4e6df6d8d37ad",
+    "reference/mp_reference.py": "900f029c1deb4168a4986f834be9157b304336e3d13b7c8d04587dc56b2209e8",
+    "scripts/common.py": "10ddaa6a047d7a32856d63be45248e740961ce782f7ae3672e8bd183fc69443e"
+   },
+   "git_sha": "71d73e7dae3b9a08a6c61fe7fa677893faa392d6",
+   "params": {
+    "points": 1000,
+    "workers": 2,
+    "extra_code_sha256": {
+     "build_engine.sh": "0b4ec5fff6057cbe590b0be26a5dff88daf54be0dcfb91083bcee3dd1bcdc883",
+     "scripts/g5_soundness.py": "069eff1bcb9f7137bdf1b3d67914a28e7c1f4e6d79cf54bd07e8e88fff70f06d",
+     "scripts/engine_mutation_audit.py": "76617facf6056869c3978673e97f4be02bb62971d1423000f178cb6cc84359e0"
+    }
+   },
+   "seconds": 1479.62,
+   "environment": {
+    "python": "3.12.11",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "capd_source": "name=CAPD::DynSys (Computer Assisted Proofs in Dynamics); url=https://github.com/CAPDGroup/CAPD; commit=2f060980d0685cc9bf88352e08c242197cd7d686; version=6.1.0-dev (CAPDVersion.txt; upstream master, no release tag); license=GPL-3.0 (third_party/capd/COPYING); fetched=2026-10-15T06:14:55Z; tree_sha256=57e5cee6012ad31f50cac622901a158e01091ac3dd0f827b78991be18cee834a",
+    "engine_native_sha256": "2f656261cdc931c15e90ca39206c03faf4bd1db57bf055d71b7150f2bddae8cc"
+   }
+  }
+ }
+}

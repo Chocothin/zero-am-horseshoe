@@ -1,0 +1,336 @@
+{
+ "tag": "[CAP 감싸기 폭] + [수치 DP 중점]",
+ "order": 20,
+ "arithmetic": "double native",
+ "tables": [
+  {
+   "map": "figure-eight full period P^3",
+   "returns": 3,
+   "dp_row_sum_norm": 13.180740628803653,
+   "second_derivative_scale": 298.60453246168817,
+   "rows": [
+    {
+     "rho": "1e-12",
+     "wall_seconds": 8.83,
+     "c0_image_width": 1.1837412268796264e-09,
+     "c0_growth": 591.8706134398132,
+     "c0_seconds": 3.96,
+     "tube_min": 1.7308133843591236,
+     "return_time_width": 9.593286165454629e-10,
+     "wrapping_excess": 44.90420000727487,
+     "c1_derivative_width": 0.001021896169446368,
+     "c1_seconds": 4.85,
+     "c1_overestimation": 1711119.655522108
+    },
+    {
+     "rho": "1e-10",
+     "wall_seconds": 8.87,
+     "c0_image_width": 6.828053372687672e-09,
+     "c0_growth": 34.140266863438356,
+     "c0_seconds": 3.98,
+     "tube_min": 1.7308133806480903,
+     "return_time_width": 6.156771092946656e-09,
+     "wrapping_excess": 2.5901630132097586,
+     "c1_derivative_width": 0.020621134915705497,
+     "c1_seconds": 4.87,
+     "c1_overestimation": 345291.7265807284
+    },
+    {
+     "rho": "1e-8",
+     "wall_seconds": 8.84,
+     "c0_image_width": 6.845102260531108e-07,
+     "c0_growth": 34.22551130265554,
+     "c0_seconds": 3.97,
+     "tube_min": 1.7308130088514808,
+     "return_time_width": 6.158476537621027e-07,
+     "wrapping_excess": 2.596630361412552,
+     "c1_derivative_width": 2.0583447743658456,
+     "c1_seconds": 4.85,
+     "c1_overestimation": 344660.67165774474
+    },
+    {
+     "rho": "1e-6",
+     "wall_seconds": 8.84,
+     "c0_image_width": 0.0007146348694011858,
+     "c0_growth": 357.3174347005929,
+     "c0_seconds": 3.96,
+     "tube_min": 1.7307705530555488,
+     "return_time_width": 0.0005340248356979771,
+     "wrapping_excess": 27.109055914487318,
+     "c1_derivative_width": 696.2658032390382,
+     "c1_seconds": 4.86,
+     "c1_overestimation": 1165866.099718984
+    },
+    {
+     "rho": "1e-5",
+     "wall_seconds": 14.97,
+     "c0": "FAIL: c0 hull poincare: Interval error:  sqrt(x): Interval x must be nonnegative. ",
+     "c1": "FAIL: c1 poincare: Interval error:  sqrt(x): Interval x must be nonnegative. "
+    },
+    {
+     "rho": "1e-4",
+     "wall_seconds": 2.19,
+     "c0": "FAIL: c0 hull poincare: PoincareMap error: possible nontransversal return to the section ",
+     "c1": "FAIL: c1 poincare: PoincareMap error: possible nontransversal return to the section "
+    },
+    {
+     "rho": "1e-3",
+     "wall_seconds": 27.53,
+     "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+     "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+    },
+    {
+     "rho": "1e-2",
+     "wall_seconds": 20.04,
+     "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+     "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+    }
+   ]
+  },
+  {
+   "map": "figure-eight half segment (S+ -> S-)",
+   "returns": 1,
+   "dp_row_sum_norm": 17.52141329213397,
+   "second_derivative_scale": 33.29655483892413,
+   "rows": [
+    {
+     "rho": "1e-12",
+     "wall_seconds": 1.4,
+     "c0_image_width": 4.980904577678302e-11,
+     "c0_growth": 24.90452288839151,
+     "c0_seconds": 0.63,
+     "tube_min": 1.732665017810819,
+     "return_time_width": 3.1535662969872646e-11,
+     "wrapping_excess": 1.4213763737638732,
+     "c1_derivative_width": 1.6739570618540256e-08,
+     "c1_seconds": 0.76,
+     "c1_overestimation": 251.37091058699363
+    },
+    {
+     "rho": "1e-10",
+     "wall_seconds": 1.41,
+     "c0_image_width": 4.882773296799314e-09,
+     "c0_growth": 24.41386648399657,
+     "c0_seconds": 0.63,
+     "tube_min": 1.7326650172000981,
+     "return_time_width": 3.1080205076250422e-09,
+     "wrapping_excess": 1.3933731301776258,
+     "c1_derivative_width": 1.656386221959849e-06,
+     "c1_seconds": 0.76,
+     "c1_overestimation": 248.73237336006767
+    },
+    {
+     "rho": "1e-8",
+     "wall_seconds": 1.41,
+     "c0_image_width": 4.881841477732962e-07,
+     "c0_growth": 24.40920738866481,
+     "c0_seconds": 0.63,
+     "tube_min": 1.732664956127983,
+     "return_time_width": 3.1075869788566024e-07,
+     "wrapping_excess": 1.3931072215289295,
+     "c1_derivative_width": 0.00016562165271238882,
+     "c1_seconds": 0.76,
+     "c1_overestimation": 248.70689101860896
+    },
+    {
+     "rho": "1e-6",
+     "wall_seconds": 1.4,
+     "c0_image_width": 4.885386058761654e-05,
+     "c0_growth": 24.42693029380827,
+     "c0_seconds": 0.62,
+     "tube_min": 1.7326588486761658,
+     "return_time_width": 3.1097691877590705e-05,
+     "wrapping_excess": 1.3941187212777209,
+     "c1_derivative_width": 0.016568064958917716,
+     "c1_seconds": 0.76,
+     "c1_overestimation": 248.79548408337763
+    },
+    {
+     "rho": "1e-5",
+     "wall_seconds": 1.4,
+     "c0_image_width": 0.0004918023287094897,
+     "c0_growth": 24.59011643547448,
+     "c0_seconds": 0.62,
+     "tube_min": 1.732603304535524,
+     "return_time_width": 0.0003129786767326337,
+     "wrapping_excess": 1.4034322474725212,
+     "c1_derivative_width": 0.16621023154131054,
+     "c1_seconds": 0.76,
+     "c1_overestimation": 249.59073445491794
+    },
+    {
+     "rho": "1e-4",
+     "wall_seconds": 1.41,
+     "c0_image_width": 0.005240754245248169,
+     "c0_growth": 26.203771226240846,
+     "c0_seconds": 0.63,
+     "tube_min": 1.7320456906836013,
+     "return_time_width": 0.003347325393065148,
+     "wrapping_excess": 1.4955284022667688,
+     "c1_derivative_width": 1.7060980369129908,
+     "c1_seconds": 0.77,
+     "c1_overestimation": 256.1973821565675
+    },
+    {
+     "rho": "1e-3",
+     "wall_seconds": 1.46,
+     "c0_image_width": 0.1089401655645168,
+     "c0_growth": 54.4700827822584,
+     "c0_seconds": 0.64,
+     "tube_min": 1.7282979171327368,
+     "return_time_width": 0.07788202400475885,
+     "wrapping_excess": 3.1087722134099813,
+     "c1_derivative_width": 24.59092918572019,
+     "c1_seconds": 0.79,
+     "c1_overestimation": 369.271375141987
+    },
+    {
+     "rho": "1e-2",
+     "wall_seconds": 19.15,
+     "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+     "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+    }
+   ]
+  },
+  {
+   "map": "butterfly1 P^1 of 7 (HE/other)",
+   "returns": 1,
+   "dp_row_sum_norm": 37.85631796390494,
+   "second_derivative_scale": 161.64023310132333,
+   "rows": [
+    {
+     "rho": "1e-12",
+     "wall_seconds": 6.26,
+     "c0_image_width": 6.326035251191797e-10,
+     "c0_growth": 316.30176255958986,
+     "c0_seconds": 2.79,
+     "tube_min": 0.13524030032880244,
+     "return_time_width": 3.884998989178712e-10,
+     "wrapping_excess": 8.355322957218812,
+     "c1_derivative_width": 0.043650322396142194,
+     "c1_seconds": 3.45,
+     "c1_overestimation": 135023074.2638815
+    },
+    {
+     "rho": "1e-10",
+     "wall_seconds": 6.28,
+     "c0_image_width": 1.1873929395278537e-08,
+     "c0_growth": 59.36964697639269,
+     "c0_seconds": 2.81,
+     "tube_min": 0.13524029722144068,
+     "return_time_width": 3.5843168433302708e-09,
+     "wrapping_excess": 1.5682889982327435,
+     "c1_derivative_width": 4.323004829148692,
+     "c1_seconds": 3.45,
+     "c1_overestimation": 133723044.88198921
+    },
+    {
+     "rho": "1e-8",
+     "wall_seconds": 6.27,
+     "c0_image_width": 9.499641795196467e-06,
+     "c0_growth": 474.98208975982334,
+     "c0_seconds": 2.81,
+     "tube_min": 0.13523998417784247,
+     "return_time_width": 5.225989141877108e-06,
+     "wrapping_excess": 12.546970104506915,
+     "c1_derivative_width": 433.7244323324121,
+     "c1_seconds": 3.45,
+     "c1_overestimation": 134163513.62860699
+    },
+    {
+     "rho": "1e-6",
+     "wall_seconds": 6.64,
+     "c0_image_width": 0.41471015921082843,
+     "c0_growth": 207355.0796054142,
+     "c0_seconds": 2.97,
+     "tube_min": 0.13513910664209178,
+     "return_time_width": 0.22615985459645138,
+     "wrapping_excess": 5477.423340619713,
+     "c1_derivative_width": 128786.9498297024,
+     "c1_seconds": 3.65,
+     "c1_overestimation": 398375291.09777075
+    },
+    {
+     "rho": "1e-5",
+     "wall_seconds": 18.69,
+     "c0": "FAIL: c0 hull poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate.",
+     "c1": "FAIL: c1 poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate."
+    },
+    {
+     "rho": "1e-4",
+     "wall_seconds": 12.33,
+     "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+     "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+    },
+    {
+     "rho": "1e-3",
+     "wall_seconds": 21.15,
+     "c0": "FAIL: c0 hull poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate.",
+     "c1": "FAIL: c1 poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate."
+    },
+    {
+     "rho": "1e-2",
+     "wall_seconds": 6.69,
+     "c0": "FAIL: c0 hull poincare: PoincareMap error: possible nontransversal return to the section ",
+     "c1": "FAIL: c1 poincare: PoincareMap error: possible nontransversal return to the section "
+    }
+   ]
+  },
+  {
+   "map": "butterfly1 P^7 of 7 (HE/other)",
+   "returns": 7,
+   "dp_row_sum_norm": null,
+   "second_derivative_scale": null,
+   "rows": [
+    {
+     "rho": "1e-12",
+     "wall_seconds": 36.6,
+     "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+     "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+    },
+    {
+     "rho": "1e-10",
+     "wall_seconds": 22.32,
+     "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+     "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+    },
+    {
+     "rho": "1e-8",
+     "wall_seconds": 38.61,
+     "c0": "FAIL: c0 hull poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate.",
+     "c1": "FAIL: c1 poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate."
+    },
+    {
+     "rho": "1e-6",
+     "wall_seconds": 35.55,
+     "c0": "FAIL: c0 hull poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate.",
+     "c1": "FAIL: c1 poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate."
+    },
+    {
+     "rho": "1e-5",
+     "wall_seconds": 18.74,
+     "c0": "FAIL: c0 hull poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate.",
+     "c1": "FAIL: c1 poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate."
+    },
+    {
+     "rho": "1e-4",
+     "wall_seconds": 12.37,
+     "c0": "FAIL: c0 hull poincare: Interval error: Interval Error *** Possible division by zero.",
+     "c1": "FAIL: c1 poincare: Interval error: Interval Error *** Possible division by zero."
+    },
+    {
+     "rho": "1e-3",
+     "wall_seconds": 20.94,
+     "c0": "FAIL: c0 hull poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate.",
+     "c1": "FAIL: c1 poincare: High Order Enclosure Error: minimal time step reached. Cannot integrate."
+    },
+    {
+     "rho": "1e-2",
+     "wall_seconds": 6.6,
+     "c0": "FAIL: c0 hull poincare: PoincareMap error: possible nontransversal return to the section ",
+     "c1": "FAIL: c1 poincare: PoincareMap error: possible nontransversal return to the section "
+    }
+   ]
+  }
+ ]
+}

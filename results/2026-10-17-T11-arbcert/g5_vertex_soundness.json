@@ -1,0 +1,176 @@
+{
+ "tag": "[수치: G5 표본 대조] G5-꼭짓점: 314변 × 꼭짓점 16개, mpmath Jacobi 좌표 Taylor 45자리",
+ "plan": {
+  "tag": "G5-꼭짓점",
+  "digits": 32,
+  "points": 5024
+ },
+ "points_judged": 5024,
+ "missing": [],
+ "errors": [],
+ "random_points": 0,
+ "vertex_points": 5024,
+ "per_type": {
+  "cycle": {
+   "points": 256,
+   "random_points": 0,
+   "vertex_points": 256,
+   "violations": 0,
+   "min_rel_margin": 5.377880114411689e-20
+  },
+  "junction_out": {
+   "points": 16,
+   "random_points": 0,
+   "vertex_points": 16,
+   "violations": 0,
+   "min_rel_margin": 1.4243437446356405e-18
+  },
+  "back_tail": {
+   "points": 2064,
+   "random_points": 0,
+   "vertex_points": 2064,
+   "violations": 0,
+   "min_rel_margin": 1.1730129225210061e-21
+  },
+  "excursion": {
+   "points": 624,
+   "random_points": 0,
+   "vertex_points": 624,
+   "violations": 0,
+   "min_rel_margin": 1.2083903429601295e-21
+  },
+  "front_tail": {
+   "points": 2048,
+   "random_points": 0,
+   "vertex_points": 2048,
+   "violations": 0,
+   "min_rel_margin": 1.0951291387832587e-21
+  },
+  "junction_in": {
+   "points": 16,
+   "random_points": 0,
+   "vertex_points": 16,
+   "violations": 0,
+   "min_rel_margin": 2.9410982769375066e-18
+  }
+ },
+ "per_check": {
+  "branch_out_in_v5_hull": {
+   "n": 5024,
+   "violations": 0,
+   "min_margin": 2.6752076602976952e-08,
+   "min_rel_margin": 0.4965879942312922,
+   "at": "M+26__M+27__v10"
+  },
+  "deriv_in_DB": {
+   "n": 80384,
+   "violations": 0,
+   "min_margin": 1.7743725829870084e-17,
+   "min_rel_margin": 4.2365143721018036e-07,
+   "at": "M-1__M+0__v06"
+  },
+  "deriv_in_hull": {
+   "n": 80384,
+   "violations": 0,
+   "min_margin": 3.000120358180716e-07,
+   "min_rel_margin": 0.4971226397550147,
+   "at": "M-118__M-117__v02"
+  },
+  "descending_crossing": {
+   "n": 5024,
+   "violations": 0,
+   "min_margin": 2.3963528890490684,
+   "min_rel_margin": 2.3963528890490684,
+   "at": "N7__N8__v13"
+  },
+  "disc_above_v2_lower": {
+   "n": 5024,
+   "violations": 0,
+   "min_margin": 1.0951291387832587e-21,
+   "min_rel_margin": 1.0951291387832587e-21,
+   "at": "M+77__M+78__v02"
+  },
+  "disc_in_v5_hull": {
+   "n": 5024,
+   "violations": 0,
+   "min_margin": 3.6197224639085864e-08,
+   "min_rel_margin": 0.18844705806526518,
+   "at": "M-142__M-141__v12"
+  },
+  "first_crossing_A_positive_before": {
+   "n": 5024,
+   "violations": 0,
+   "min_margin": 1.396146916853579e-05,
+   "min_rel_margin": 1.396146916853579e-05,
+   "at": "M-5__M-4__v00"
+  },
+  "image_in_hull": {
+   "n": 20096,
+   "violations": 0,
+   "min_margin": 24850.078183585996,
+   "min_rel_margin": 0.49939849416815363,
+   "at": "M-20__M-19__v04"
+  },
+  "image_in_mean_value": {
+   "n": 20096,
+   "violations": 0,
+   "min_margin": 2.1716985026801188e-10,
+   "min_rel_margin": 0.25000040403809454,
+   "at": "M-107__M-106__v05"
+  },
+  "r_max_below_v2_upper": {
+   "n": 15072,
+   "violations": 0,
+   "min_margin": 4.351809071975243e-08,
+   "min_rel_margin": 3.37506875164095e-08,
+   "at": "M+42__M+43__v15"
+  },
+  "r_max_below_v5_upper": {
+   "n": 15072,
+   "violations": 0,
+   "min_margin": 0.0001789318990593316,
+   "min_rel_margin": 0.00013774752104125842,
+   "at": "N2__N3__v08"
+  },
+  "r_min_above_v2_lower": {
+   "n": 15072,
+   "violations": 0,
+   "min_margin": 2.486183619237079e-08,
+   "min_rel_margin": 1.9889140156962887e-08,
+   "at": "M-29__M-28__v14"
+  },
+  "r_min_above_v5_lower": {
+   "n": 15072,
+   "violations": 0,
+   "min_margin": 0.0004392979673425715,
+   "min_rel_margin": 6.373460793638884e-05,
+   "at": "N15__N0__v04"
+  },
+  "tau_in_v2_window": {
+   "n": 5024,
+   "violations": 0,
+   "min_margin": 1.5739421251555922e-13,
+   "min_rel_margin": 0.00032949912578530364,
+   "at": "N13__N14__v08"
+  },
+  "tau_in_v5_hull_window": {
+   "n": 5024,
+   "violations": 0,
+   "min_margin": 2.6231483096827685e-09,
+   "min_rel_margin": 0.4573167732720064,
+   "at": "M-141__M-140__v08"
+  }
+ },
+ "violations": [],
+ "critical": 0,
+ "convergence": {
+  "pairs": 0,
+  "tau": 0.0,
+  "wprime": 0.0,
+  "DP": 0.0,
+  "r": 0.0
+ },
+ "seconds_reference_total": 25152.9,
+ "seconds_judge": 2.9,
+ "pass": true
+}

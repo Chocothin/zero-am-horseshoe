@@ -1,0 +1,332 @@
+{
+ "description": "V3-cone 외피·그래프 독립 재계산",
+ "vertices": 313,
+ "edges": 314,
+ "edge_set_equals_record_files": true,
+ "hull_overlap_pairs": 20,
+ "overlap_pairs_by_kind": {
+  "chain-cycle": 20
+ },
+ "overlap_pairs": [
+  [
+   "M+139",
+   "N14"
+  ],
+  [
+   "M+140",
+   "N15"
+  ],
+  [
+   "M+141",
+   "N0"
+  ],
+  [
+   "M+142",
+   "N1"
+  ],
+  [
+   "M+143",
+   "N2"
+  ],
+  [
+   "M+144",
+   "N3"
+  ],
+  [
+   "M+145",
+   "N4"
+  ],
+  [
+   "M+146",
+   "N5"
+  ],
+  [
+   "M+147",
+   "N6"
+  ],
+  [
+   "M+148",
+   "N7"
+  ],
+  [
+   "M-139",
+   "N2"
+  ],
+  [
+   "M-140",
+   "N1"
+  ],
+  [
+   "M-141",
+   "N0"
+  ],
+  [
+   "M-142",
+   "N15"
+  ],
+  [
+   "M-143",
+   "N14"
+  ],
+  [
+   "M-144",
+   "N13"
+  ],
+  [
+   "M-145",
+   "N12"
+  ],
+  [
+   "M-146",
+   "N11"
+  ],
+  [
+   "M-147",
+   "N10"
+  ],
+  [
+   "M-148",
+   "N9"
+  ]
+ ],
+ "hull_covers_hset_vertices": true,
+ "m0_min_separation": {
+  "vertex": "M+10",
+  "value": 0.6786388740800798,
+  "exact": "30268305225355137116917785910088182820676811/44601490397061246283071436545296723011960832"
+ },
+ "m0_disjoint_all": true,
+ "cycle_min_separation": {
+  "pair": [
+   "N3",
+   "N13"
+  ],
+  "value": 0.5651591734107818,
+  "exact": "3150867680711507137432560042190258819797979/5575186299632655785383929568162090376495104"
+ },
+ "cycle_disjoint_all": true,
+ "overlap_parallelepiped_certificates": [
+  {
+   "pair": [
+    "M+139",
+    "N14"
+   ],
+   "hull_separation": -2.6306126442844683e-11,
+   "certificate": [
+    "inv2[2]",
+    6.6332479134782076e-12
+   ]
+  },
+  {
+   "pair": [
+    "M+140",
+    "N15"
+   ],
+   "hull_separation": -1.2410167142364753e-11,
+   "certificate": [
+    "inv2[2]",
+    4.8937606817072505e-12
+   ]
+  },
+  {
+   "pair": [
+    "M+141",
+    "N0"
+   ],
+   "hull_separation": -1.0662322036502144e-11,
+   "certificate": [
+    "inv2[2]",
+    7.654897227276171e-12
+   ]
+  },
+  {
+   "pair": [
+    "M+142",
+    "N1"
+   ],
+   "hull_separation": -5.3948919801955054e-12,
+   "certificate": [
+    "inv2[2]",
+    2.413096773193071e-12
+   ]
+  },
+  {
+   "pair": [
+    "M+143",
+    "N2"
+   ],
+   "hull_separation": -2.609183180359442e-11,
+   "certificate": [
+    "inv2[2]",
+    1.1216407626048483e-12
+   ]
+  },
+  {
+   "pair": [
+    "M+144",
+    "N3"
+   ],
+   "hull_separation": -5.5824675425597116e-11,
+   "certificate": [
+    "inv2[2]",
+    3.443248669155332e-13
+   ]
+  },
+  {
+   "pair": [
+    "M+145",
+    "N4"
+   ],
+   "hull_separation": -3.318856916371075e-11,
+   "certificate": null
+  },
+  {
+   "pair": [
+    "M+146",
+    "N5"
+   ],
+   "hull_separation": -5.939964202706285e-11,
+   "certificate": null
+  },
+  {
+   "pair": [
+    "M+147",
+    "N6"
+   ],
+   "hull_separation": -3.7073201540178726e-11,
+   "certificate": null
+  },
+  {
+   "pair": [
+    "M+148",
+    "N7"
+   ],
+   "hull_separation": -5.1035963715622584e-11,
+   "certificate": null
+  },
+  {
+   "pair": [
+    "M-139",
+    "N2"
+   ],
+   "hull_separation": -2.6476306401977694e-11,
+   "certificate": [
+    "inv2[1]",
+    6.638633276128114e-12
+   ]
+  },
+  {
+   "pair": [
+    "M-140",
+    "N1"
+   ],
+   "hull_separation": -1.252304483443341e-11,
+   "certificate": [
+    "inv2[1]",
+    4.899507152665448e-12
+   ]
+  },
+  {
+   "pair": [
+    "M-141",
+    "N0"
+   ],
+   "hull_separation": -1.068742672338092e-11,
+   "certificate": [
+    "inv2[1]",
+    7.654895074909307e-12
+   ]
+  },
+  {
+   "pair": [
+    "M-142",
+    "N15"
+   ],
+   "hull_separation": -5.440548732627469e-12,
+   "certificate": [
+    "inv2[1]",
+    2.413330328963827e-12
+   ]
+  },
+  {
+   "pair": [
+    "M-143",
+    "N14"
+   ],
+   "hull_separation": -2.6200973268239118e-11,
+   "certificate": [
+    "inv2[1]",
+    1.1226720639231144e-12
+   ]
+  },
+  {
+   "pair": [
+    "M-144",
+    "N13"
+   ],
+   "hull_separation": -5.603066126503283e-11,
+   "certificate": [
+    "inv2[1]",
+    3.443233177761125e-13
+   ]
+  },
+  {
+   "pair": [
+    "M-145",
+    "N12"
+   ],
+   "hull_separation": -3.3210777171056786e-11,
+   "certificate": null
+  },
+  {
+   "pair": [
+    "M-146",
+    "N11"
+   ],
+   "hull_separation": -5.948834125156546e-11,
+   "certificate": null
+  },
+  {
+   "pair": [
+    "M-147",
+    "N10"
+   ],
+   "hull_separation": -3.7172820061056326e-11,
+   "certificate": null
+  },
+  {
+   "pair": [
+    "M-148",
+    "N9"
+   ],
+   "hull_separation": -5.109778514092868e-11,
+   "certificate": null
+  }
+ ],
+ "all_overlapping_pairs_certified_disjoint": false,
+ "strongly_connected": true,
+ "graph_structure": {
+  "edge_set_equals_expected": true,
+  "degrees_ok": true,
+  "n8_successors": [
+   "M-148",
+   "N9"
+  ],
+  "n8_predecessors": [
+   "M+148",
+   "N7"
+  ]
+ },
+ "period": 2,
+ "class_sizes": [
+  156,
+  157
+ ],
+ "charpoly_equals_x313_minus_x297_minus_x15": true,
+ "rho_enclosure": "[1.007396916664634838437372139697624931613 +/- 7.65e-41]",
+ "q_sign_change": true,
+ "ln_rho_enclosure": "[0.007369693638442534385943358023697571406674 +/- 1.37e-43]",
+ "ln_rho_lower_ge_claim": true,
+ "rho_ge_claim": true,
+ "seconds": 0.78
+}

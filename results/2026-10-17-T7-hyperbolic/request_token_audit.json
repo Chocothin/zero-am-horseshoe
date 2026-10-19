@@ -1,0 +1,216 @@
+{
+ "tag": "엔진 요청 토큰 사전 점검(T6·T7 이 만드는 요청, 엔진 적분 없음)",
+ "summary": {
+  "requests": 6100,
+  "endpoint_tokens": 1094456,
+  "rejected": 0,
+  "by_arith": {
+   "double": {
+    "requests": 3162,
+    "endpoint_tokens": 676716,
+    "hex_tokens": 218238,
+    "rejected": 0,
+    "max_hex_odd_bits": 53
+   },
+   "mp:128": {
+    "requests": 2624,
+    "endpoint_tokens": 385712,
+    "hex_tokens": 180846,
+    "rejected": 0,
+    "max_hex_odd_bits": 53
+   },
+   "mp:96": {
+    "requests": 314,
+    "endpoint_tokens": 32028,
+    "hex_tokens": 21620,
+    "rejected": 0,
+    "max_hex_odd_bits": 53
+   }
+  },
+  "controls": 6,
+  "controls_agree": true
+ },
+ "rows": [
+  {
+   "source": "T6 certify_graph main",
+   "arith": "double",
+   "requests": 942,
+   "endpoint_tokens": 96084,
+   "hex_tokens": 64860,
+   "pq_tokens": 31224,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": 0,
+   "samples": []
+  },
+  {
+   "source": "T6 certify_graph main",
+   "arith": "mp:128",
+   "requests": 314,
+   "endpoint_tokens": 32028,
+   "hex_tokens": 21620,
+   "pq_tokens": 10408,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": null,
+   "samples": []
+  },
+  {
+   "source": "T6 certify_graph G8",
+   "arith": "double",
+   "requests": 942,
+   "endpoint_tokens": 96084,
+   "hex_tokens": 64860,
+   "pq_tokens": 31224,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": 0,
+   "samples": []
+  },
+  {
+   "source": "T6 certify_graph G8",
+   "arith": "mp:96",
+   "requests": 314,
+   "endpoint_tokens": 32028,
+   "hex_tokens": 21620,
+   "pq_tokens": 10408,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": null,
+   "samples": []
+  },
+  {
+   "source": "T6 pieces round 1",
+   "arith": "double",
+   "requests": 942,
+   "endpoint_tokens": 450276,
+   "hex_tokens": 64860,
+   "pq_tokens": 385416,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": 0,
+   "samples": []
+  },
+  {
+   "source": "T6 pieces round 1",
+   "arith": "mp:128",
+   "requests": 314,
+   "endpoint_tokens": 150092,
+   "hex_tokens": 21620,
+   "pq_tokens": 128472,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": null,
+   "samples": []
+  },
+  {
+   "source": "T6 negative controls",
+   "arith": "double",
+   "requests": 336,
+   "endpoint_tokens": 34272,
+   "hex_tokens": 23658,
+   "pq_tokens": 10614,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": 0,
+   "samples": []
+  },
+  {
+   "source": "T6 negative controls",
+   "arith": "mp:128",
+   "requests": 112,
+   "endpoint_tokens": 11424,
+   "hex_tokens": 7886,
+   "pq_tokens": 3538,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": null,
+   "samples": []
+  },
+  {
+   "source": "T7 theorem B probe",
+   "arith": "mp:128",
+   "requests": 1884,
+   "endpoint_tokens": 192168,
+   "hex_tokens": 129720,
+   "pq_tokens": 62448,
+   "max_hex_odd_bits": 53,
+   "python_rejected": 0,
+   "engine_native_strict_rejected": 0,
+   "engine_x86filib_strict_rejected": null,
+   "samples": []
+  }
+ ],
+ "controls": [
+  {
+   "arith": "double",
+   "control": "frame_in centre[0] = 0x1.00000000000008p+0 (over precision)",
+   "python_rejected_tokens": 2,
+   "engine_rejected_requests": [
+    1,
+    1
+   ],
+   "expected_rejected": true,
+   "agrees": true
+  },
+  {
+   "arith": "double",
+   "control": "frame_in centre[0] = 0x1.0000000000001p+0 (within precision)",
+   "python_rejected_tokens": 0,
+   "engine_rejected_requests": [
+    0,
+    0
+   ],
+   "expected_rejected": false,
+   "agrees": true
+  },
+  {
+   "arith": "mp:128",
+   "control": "frame_in centre[0] = 0x1.00000000000000000000000000000001p+0 (over precision)",
+   "python_rejected_tokens": 2,
+   "engine_rejected_requests": [
+    1
+   ],
+   "expected_rejected": true,
+   "agrees": true
+  },
+  {
+   "arith": "mp:128",
+   "control": "frame_in centre[0] = 0x1.0000000000000000000000000001p+0 (within precision)",
+   "python_rejected_tokens": 0,
+   "engine_rejected_requests": [
+    0
+   ],
+   "expected_rejected": false,
+   "agrees": true
+  },
+  {
+   "arith": "mp:96",
+   "control": "frame_in centre[0] = 0x1.000000000000000000000001p+0 (over precision)",
+   "python_rejected_tokens": 2,
+   "engine_rejected_requests": [
+    1
+   ],
+   "expected_rejected": true,
+   "agrees": true
+  },
+  {
+   "arith": "mp:96",
+   "control": "frame_in centre[0] = 0x1.00000000000000000000001p+0 (within precision)",
+   "python_rejected_tokens": 0,
+   "engine_rejected_requests": [
+    0
+   ],
+   "expected_rejected": false,
+   "agrees": true
+  }
+ ]
+}

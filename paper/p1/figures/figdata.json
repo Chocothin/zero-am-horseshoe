@@ -1,0 +1,85 @@
+{
+ "fig1": {
+  "axis_half_width": 4.51,
+  "cycle_closing_gap_below_1e-9": true,
+  "cycle_flights": 16,
+  "cycle_max_junction_gap": "<1e-9",
+  "cycle_period_sum_flight_times": 67.9793008,
+  "dist_k0": 0.894212336,
+  "dist_min_over_k": 8.46078998e-14,
+  "graph_k_range": [
+   -148,
+   148
+  ],
+  "homoclinic_flights": 16,
+  "homoclinic_k_min_max": [
+   -183,
+   183
+  ],
+  "homoclinic_k_range": [
+   -8,
+   8
+  ],
+  "homoclinic_max_junction_gap": "<1e-9",
+  "homoclinic_point_count": 367,
+  "method": "stored points (hex) -> float DOP853 flight to next collinear configuration; numerical integration for illustration",
+  "sources": [
+   "results/2026-10-15-T6-horseshoe/orbit_refit_mp.json"
+  ]
+ },
+ "fig2": {
+  "cycle_edges": 16,
+  "edges": 314,
+  "edges_per_segment": {
+   "arrival": 1,
+   "backward tail": 129,
+   "departure": 1,
+   "excursion |k|<20": 39,
+   "forward tail": 128
+  },
+  "junction_depth_L": 149,
+  "loops": [
+   16,
+   298
+  ],
+  "marker_position_in_long_cycle": 149,
+  "method": "schematic of stored graph edges; vertices placed on two circles",
+  "shared_vertex_count": 1,
+  "sources": [
+   "results/2026-10-15-T6-horseshoe/graph_design.json",
+   "results/2026-10-17-T6-horseshoe/coverings_summary.json"
+  ],
+  "vertices": 313
+ },
+ "fig3": {
+  "a_star_below_mu_s": true,
+  "a_star_max": 0.894310768,
+  "b_star_above_mu_u": true,
+  "b_star_cut_above": 1.6,
+  "b_star_cut_count": 61,
+  "b_star_max": 96.61778698489263,
+  "b_star_max_edge_is_departing": true,
+  "b_star_min": 1.1167651,
+  "b_star_upper_label": 96.62,
+  "edges_plotted": 314,
+  "excursion_edge_count": 39,
+  "excursion_edges_k_range": [
+   -19,
+   20
+  ],
+  "excursion_shaded_x_range_in_fig3": [
+   151.5,
+   190.5
+  ],
+  "exit_margin_min": 0.0595011432,
+  "method": "stored per-edge values, no recomputation",
+  "mu_s": 0.8944,
+  "mu_u": 1.1167,
+  "sources": [
+   "results/2026-10-17-T6-horseshoe/coverings_summary.json",
+   "results/2026-10-17-T7-hyperbolic/cones.json",
+   "results/2026-10-17-T7-hyperbolic/theorem_Aprime.json"
+  ],
+  "stable_margin_min": 0.0572238511
+ }
+}

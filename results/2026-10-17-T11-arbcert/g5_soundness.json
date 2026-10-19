@@ -1,0 +1,198 @@
+{
+ "tag": "[수치: G5 표본 대조] mpmath Jacobi 좌표 Taylor(45자리, 중심 60자리)와 T11 감싸기의 포함",
+ "plan": {
+  "seed": 20261017,
+  "denominator": 1048576,
+  "per_edge": {
+   "cycle": 4,
+   "junction_out": 50,
+   "junction_in": 50,
+   "back_tail": 3,
+   "excursion": 3,
+   "front_tail": 3
+  },
+  "points": 1424
+ },
+ "points_judged": 1424,
+ "missing": [],
+ "errors": [],
+ "random_points": 1052,
+ "vertex_points": 0,
+ "per_type": {
+  "cycle": {
+   "points": 94,
+   "random_points": 64,
+   "vertex_points": 0,
+   "violations": 0,
+   "min_rel_margin": 1.6896183606411037e-12
+  },
+  "junction_out": {
+   "points": 53,
+   "random_points": 50,
+   "vertex_points": 0,
+   "violations": 0,
+   "min_rel_margin": 3.624938396100194e-11
+  },
+  "back_tail": {
+   "points": 533,
+   "random_points": 387,
+   "vertex_points": 0,
+   "violations": 0,
+   "min_rel_margin": 5.144632278499589e-14
+  },
+  "excursion": {
+   "points": 162,
+   "random_points": 117,
+   "vertex_points": 0,
+   "violations": 0,
+   "min_rel_margin": 9.469249480838715e-14
+  },
+  "front_tail": {
+   "points": 529,
+   "random_points": 384,
+   "vertex_points": 0,
+   "violations": 0,
+   "min_rel_margin": 8.661687268547277e-14
+  },
+  "junction_in": {
+   "points": 53,
+   "random_points": 50,
+   "vertex_points": 0,
+   "violations": 0,
+   "min_rel_margin": 7.480461398674272e-11
+  }
+ },
+ "per_check": {
+  "branch_out_in_v5_hull": {
+   "n": 1424,
+   "violations": 0,
+   "min_margin": 1.4863516140701954e-08,
+   "min_rel_margin": 0.4981210966325328,
+   "at": "M+96__M+97__r0"
+  },
+  "center_deriv": {
+   "n": 5344,
+   "violations": 0,
+   "min_margin": 7.819268081402291e-35,
+   "min_rel_margin": 0.49993123466820605,
+   "at": "M-7__M-6__c"
+  },
+  "center_image": {
+   "n": 1336,
+   "violations": 0,
+   "min_margin": 4.335626819985079e-26,
+   "min_rel_margin": 0.4994641092802393,
+   "at": "M-8__M-7__c"
+  },
+  "deriv_in_DB": {
+   "n": 22784,
+   "violations": 0,
+   "min_margin": 2.0225523050782338e-11,
+   "min_rel_margin": 0.04197257382098996,
+   "at": "M+22__M+23__r0"
+  },
+  "deriv_in_hull": {
+   "n": 22784,
+   "violations": 0,
+   "min_margin": 3.0002572662033684e-07,
+   "min_rel_margin": 0.4971453255374164,
+   "at": "M-118__M-117__c"
+  },
+  "descending_crossing": {
+   "n": 1424,
+   "violations": 0,
+   "min_margin": 2.3963528891158163,
+   "min_rel_margin": 2.3963528891158163,
+   "at": "M+148__N8__r32"
+  },
+  "disc_above_v2_lower": {
+   "n": 1424,
+   "violations": 0,
+   "min_margin": 5.144632278499589e-14,
+   "min_rel_margin": 5.144632278499589e-14,
+   "at": "M-61__M-60__r1"
+  },
+  "disc_in_v5_hull": {
+   "n": 1424,
+   "violations": 0,
+   "min_margin": 4.6044264091774594e-08,
+   "min_rel_margin": 0.2454934482247216,
+   "at": "M+142__M+143__r0"
+  },
+  "first_crossing_A_positive_before": {
+   "n": 1424,
+   "violations": 0,
+   "min_margin": 5.205754801127267e-06,
+   "min_rel_margin": 5.205754801127267e-06,
+   "at": "M+19__M+20__c"
+  },
+  "image_in_hull": {
+   "n": 5696,
+   "violations": 0,
+   "min_margin": 24850.136774471157,
+   "min_rel_margin": 0.49939967163727883,
+   "at": "M-20__M-19__r1"
+  },
+  "image_in_mean_value": {
+   "n": 5696,
+   "violations": 0,
+   "min_margin": 1.1400354341096696e-10,
+   "min_rel_margin": 0.2780819332266715,
+   "at": "M+148__N8__r21"
+  },
+  "r_max_below_v2_upper": {
+   "n": 4272,
+   "violations": 0,
+   "min_margin": 4.352559254591999e-08,
+   "min_rel_margin": 3.375650559773145e-08,
+   "at": "M+42__M+43__r1"
+  },
+  "r_max_below_v5_upper": {
+   "n": 4272,
+   "violations": 0,
+   "min_margin": 0.00017893206322911023,
+   "min_rel_margin": 0.00013774764742442518,
+   "at": "N2__N3__r2"
+  },
+  "r_min_above_v2_lower": {
+   "n": 4272,
+   "violations": 0,
+   "min_margin": 2.487073834117258e-08,
+   "min_rel_margin": 1.9896261758273704e-08,
+   "at": "M-29__M-28__r2"
+  },
+  "r_min_above_v5_lower": {
+   "n": 4272,
+   "violations": 0,
+   "min_margin": 0.00043929806963953754,
+   "min_rel_margin": 6.373462277792581e-05,
+   "at": "N15__N0__r2"
+  },
+  "tau_in_v2_window": {
+   "n": 1424,
+   "violations": 0,
+   "min_margin": 5.2410352069211875e-12,
+   "min_rel_margin": 0.0613951615518691,
+   "at": "M+148__N8__r21"
+  },
+  "tau_in_v5_hull_window": {
+   "n": 1424,
+   "violations": 0,
+   "min_margin": 1.0362199504253565e-09,
+   "min_rel_margin": 0.4709104385667686,
+   "at": "M-125__M-124__r1"
+  }
+ },
+ "violations": [],
+ "critical": 0,
+ "convergence": {
+  "pairs": 50,
+  "tau": 8.95006077151e-43,
+  "wprime": 2.1351863318138748e-29,
+  "DP": 3.233136247559979e-40,
+  "r": 5.856176172891858e-08
+ },
+ "seconds_reference_total": 10815.1,
+ "seconds_judge": 1.0,
+ "pass": true
+}

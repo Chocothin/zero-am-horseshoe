@@ -1,0 +1,71 @@
+{
+ "tag": "G7",
+ "mutants": 201,
+ "killed": 194,
+ "kill_rate": 0.9651741293532339,
+ "survivors": [
+  {
+   "file": "t7hb/cone.py",
+   "function": "square",
+   "line": 23,
+   "operator": "compare GtE->Gt",
+   "original": "iv.lo >= 0",
+   "mutated": "iv.lo > 0",
+   "killed": false
+  },
+  {
+   "file": "t7hb/cone.py",
+   "function": "square",
+   "line": 25,
+   "operator": "compare LtE->Lt",
+   "original": "iv.hi <= 0",
+   "mutated": "iv.hi < 0",
+   "killed": false
+  },
+  {
+   "file": "t7hb/cone.py",
+   "function": "gram",
+   "line": 35,
+   "operator": "const 4->5",
+   "original": "4",
+   "mutated": "5",
+   "killed": false
+  },
+  {
+   "file": "t7hb/cone.py",
+   "function": "gram",
+   "line": 40,
+   "operator": "compare Gt->GtE",
+   "original": "SIGNATURE[k] > 0",
+   "mutated": "SIGNATURE[k] >= 0",
+   "killed": false
+  },
+  {
+   "file": "t7hb/cone.py",
+   "function": "margin",
+   "line": 52,
+   "operator": "binop Mult->Div",
+   "original": "mu * SIGNATURE[i]",
+   "mutated": "mu / SIGNATURE[i]",
+   "killed": false
+  },
+  {
+   "file": "t7hb/weyl.py",
+   "function": "certifies",
+   "line": 39,
+   "operator": "binop Mult->Div",
+   "original": "mu * SIGNATURE[i]",
+   "mutated": "mu / SIGNATURE[i]",
+   "killed": false
+  },
+  {
+   "file": "t7hb/hyperbolic.py",
+   "function": "judge_claims",
+   "line": 118,
+   "operator": "compare Lt->LtE",
+   "original": "0 < claimed.lambda_s < ONE",
+   "mutated": "0 <= claimed.lambda_s < ONE",
+   "killed": false
+  }
+ ]
+}

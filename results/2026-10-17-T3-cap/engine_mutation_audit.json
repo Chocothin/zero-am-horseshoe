@@ -1,0 +1,568 @@
+{
+ "tag": "G7 엔진 판정부(출력 단면 통과 세기·요청과 상 가드) mutation 감사",
+ "cases": [
+  "straddle-to-r12-max",
+  "off-section-to-r12-max",
+  "straddle-to-r12-min",
+  "before-section-to-r12-max",
+  "before-section-second-r12-max",
+  "half-segment",
+  "half-segment-multi-step-run",
+  "second-S-minus",
+  "period-P3"
+ ],
+ "unit_tests": [
+  "engine_tests/crossing_counter_test.cpp",
+  "engine_tests/endpoint_guard_test.cpp"
+ ],
+ "mutants": 37,
+ "equivalent": 2,
+ "scored": 35,
+ "killed": 35,
+ "wrong_equivalence": [],
+ "rows": [
+  {
+   "original": "if (runSign_ != dir_) throw std::runtime_error(\"crossing: the run at the return time",
+   "mutant": "if (runSign_ == dir_) throw std::runtime_error(\"crossing: the run at the return time",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "straddle-to-r12-min",
+    "before-section-to-r12-max",
+    "before-section-second-r12-max",
+    "half-segment",
+    "half-segment-multi-step-run",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: counter: counted crossing spread over several touching steps",
+    "unit: counter: start straddles the section moving against the counted direction",
+    "unit: counter: the run in the window crosses in the wrong direction",
+    "unit: counter: start before the section, the immediate counted crossing is returned",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: report: crossing spread over several touching steps is one window run",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "      if (runFromStart_ && onSection_)\n        throw std::runtime_error(\"crossing: return-time window",
+   "mutant": "      if (runFromStart_ || onSection_)\n        throw std::runtime_error(\"crossing: return-time window",
+   "equivalent": null,
+   "killed_by": [
+    "before-section-to-r12-max",
+    "half-segment",
+    "half-segment-multi-step-run",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: counter: start before the section, the immediate counted crossing is returned",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "if (++windowRuns_ == 1) countedBefore_ = counted_;",
+   "mutant": "if (++windowRuns_ >= 1) countedBefore_ = counted_;",
+   "equivalent": "windowRuns_>=2 이면 finish() 가 countedBefore_ 와 무관하게 실패한다",
+   "killed_by": []
+  },
+  {
+   "original": "if (++windowRuns_ == 1) countedBefore_ = counted_;",
+   "mutant": "if (++windowRuns_ == 1) countedBefore_ = 0;",
+   "equivalent": null,
+   "killed_by": [
+    "before-section-second-r12-max",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=1",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, CAPD window on the 2nd counted crossing with returns=1",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "if (runSign_ == dir_) ++counted_;",
+   "mutant": "if (runSign_ != dir_) ++counted_;",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "period-P3",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "} else if (before_ != after) {",
+   "mutant": "} else if (before_ == after) {",
+   "equivalent": null,
+   "killed_by": [
+    "before-section-second-r12-max",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=1",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, CAPD window on the 2nd counted crossing with returns=1",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "        if (runSign_ == dir_)\n          throw std::runtime_error(\"crossing: initial set straddles",
+   "mutant": "        if (runSign_ != dir_)\n          throw std::runtime_error(\"crossing: initial set straddles",
+   "equivalent": null,
+   "killed_by": [
+    "straddle-to-r12-max",
+    "straddle-to-r12-min",
+    "unit: counter: start straddles the section moving in the counted direction",
+    "unit: counter: start straddles the section moving against the counted direction"
+   ]
+  },
+  {
+   "original": "if (windowRuns_ != 1)",
+   "mutant": "if (windowRuns_ > 1)",
+   "equivalent": "windowRuns_=0 이면 countedBefore_=-1 이 남아 바로 다음 비교(returns-1>=0)가 같은 실패를 낸다",
+   "killed_by": []
+  },
+  {
+   "original": "if (countedBefore_ != returns_ - 1)",
+   "mutant": "if (countedBefore_ != returns_)",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "straddle-to-r12-min",
+    "before-section-to-r12-max",
+    "before-section-second-r12-max",
+    "half-segment",
+    "half-segment-multi-step-run",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=1",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: counter: counted crossing spread over several touching steps",
+    "unit: counter: start straddles the section moving against the counted direction",
+    "unit: counter: start before the section, the immediate counted crossing is returned",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, CAPD window on the 2nd counted crossing with returns=1",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: report: crossing spread over several touching steps is one window run",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "    const bool onSection = req_.in.k == k &&",
+   "mutant": "    const bool onSection = false && req_.in.k == k &&",
+   "equivalent": null,
+   "killed_by": [
+    "period-P3",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "req_.cIn.leftBound() == req_.cOut.leftBound()",
+   "mutant": "req_.cIn.leftBound() != req_.cOut.leftBound()",
+   "equivalent": null,
+   "killed_by": [
+    "period-P3",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "      runFromStart_ = first_;",
+   "mutant": "      runFromStart_ = false;",
+   "equivalent": null,
+   "killed_by": [
+    "period-P3",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: counter: window overlaps the departure from the section",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "    } else if (sign != runSign_) {",
+   "mutant": "    } else if (sign == runSign_) {",
+   "equivalent": null,
+   "killed_by": [
+    "half-segment-multi-step-run",
+    "unit: counter: ds/dt changes sign inside one touching run",
+    "unit: counter: counted crossing spread over several touching steps",
+    "unit: report: crossing spread over several touching steps is one window run"
+   ]
+  },
+  {
+   "original": "    } else if (sign != runSign_) {\n      throw std::runtime_error(\"crossing: ds/dt changes sign while touching the output section (trap 2)\");\n    }\n",
+   "mutant": "    }\n",
+   "equivalent": null,
+   "killed_by": [
+    "unit: counter: ds/dt changes sign inside one touching run"
+   ]
+  },
+  {
+   "original": "    const bool inWindow = !(runStart_.leftBound() > window_.rightBound()) &&",
+   "mutant": "    const bool inWindow = !(runStart_.leftBound() > window_.rightBound()) ||",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "straddle-to-r12-min",
+    "before-section-second-r12-max",
+    "half-segment",
+    "half-segment-multi-step-run",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: counter: start straddles the section moving against the counted direction",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "        if (after != runSign_) throw std::runtime_error(\"crossing: sign change disagrees",
+   "mutant": "        if (after == runSign_) throw std::runtime_error(\"crossing: sign change disagrees",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "before-section-second-r12-max",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "        if (after != runSign_) throw std::runtime_error(\"crossing: departure from the section",
+   "mutant": "        if (after == runSign_) throw std::runtime_error(\"crossing: departure from the section",
+   "equivalent": null,
+   "killed_by": [
+    "half-segment",
+    "half-segment-multi-step-run",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "    crossings.finish();\n",
+   "mutant": "",
+   "equivalent": null,
+   "killed_by": [
+    "unit: engine c0: same section, CAPD window on the 2nd counted crossing with returns=1",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "    if (runSign_ != 0) closeRun(0);\n",
+   "mutant": "",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "straddle-to-r12-min",
+    "before-section-to-r12-max",
+    "before-section-second-r12-max",
+    "half-segment",
+    "half-segment-multi-step-run",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: counted crossing spread over several touching steps",
+    "unit: counter: start straddles the section moving against the counted direction",
+    "unit: counter: start before the section, the immediate counted crossing is returned",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: report: crossing spread over several touching steps is one window run",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "      if (runSign_ != 0) closeRun(sign);",
+   "mutant": "      if (runSign_ == 0) closeRun(sign);",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "straddle-to-r12-min",
+    "before-section-second-r12-max",
+    "half-segment",
+    "half-segment-multi-step-run",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: counter: start straddles the section moving against the counted direction",
+    "unit: counter: two touching runs overlap the window",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: report: crossing spread over several touching steps is one window run",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "      before_ = sign;\n      first_ = false;\n      return;",
+   "mutant": "      first_ = false;\n      return;",
+   "equivalent": null,
+   "killed_by": [
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "    if (!(dsdt.leftBound() > 0 || dsdt.rightBound() < 0))",
+   "mutant": "    if (false)",
+   "equivalent": null,
+   "killed_by": [
+    "unit: counter: touching step where ds/dt may vanish",
+    "unit: engine c1: touching tube step where ds/dt may vanish"
+   ]
+  },
+  {
+   "original": "s0.leftBound() > 0 ? 1 : (s0.rightBound() < 0 ? -1 : 0), onSection);",
+   "mutant": "0, onSection);",
+   "equivalent": null,
+   "killed_by": [
+    "before-section-second-r12-max"
+   ]
+  },
+  {
+   "original": "crossings.step(enclosure[k] - req_.cOut, f(enclosure)[k],",
+   "mutant": "crossings.step(enclosure[k] - req_.cOut, -f(enclosure)[k],",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "straddle-to-r12-min",
+    "before-section-to-r12-max",
+    "before-section-second-r12-max",
+    "half-segment",
+    "half-segment-multi-step-run",
+    "second-S-minus",
+    "period-P3",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "    runEnd_ = t1;",
+   "mutant": "    runEnd_ = t0;",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "straddle-to-r12-min",
+    "before-section-to-r12-max",
+    "before-section-second-r12-max",
+    "half-segment",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: counter: start before the section, returns=2 counts the immediate crossing",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: report: crossing spread over several touching steps is one window run",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "      runStart_ = t0;",
+   "mutant": "      runStart_ = t1;",
+   "equivalent": null,
+   "killed_by": [
+    "off-section-to-r12-max",
+    "straddle-to-r12-min",
+    "before-section-to-r12-max",
+    "before-section-second-r12-max",
+    "half-segment",
+    "second-S-minus",
+    "period-P3",
+    "unit: counter: departure up, one counted downward crossing in the window",
+    "unit: counter: same section, window on the 2nd counted crossing with returns=2",
+    "unit: counter: same section, window on the 1st counted crossing with returns=1",
+    "unit: engine c0: same section, same steps with returns=2",
+    "unit: engine c1: one counted crossing in the window",
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: report: crossing spread over several touching steps is one window run",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "    if (precisionBits < 53)\n",
+   "mutant": "    if (precisionBits < 52)\n",
+   "equivalent": null,
+   "killed_by": [
+    "unit: mp precision 52 bits is refused"
+   ]
+  },
+  {
+   "original": "    if (h.oddBits > 53 || h.lowest < -1074",
+   "mutant": "    if (h.oddBits > 54 || h.lowest < -1074",
+   "equivalent": null,
+   "killed_by": [
+    "unit: reject rounding token 0x1.00000000000008p+0",
+    "unit: reject rounding token 0x20000000000001"
+   ]
+  },
+  {
+   "original": "h.lowest < -1074 ||",
+   "mutant": "h.lowest < -1075 ||",
+   "equivalent": null,
+   "killed_by": [
+    "unit: reject rounding token 0x1p-1075",
+    "unit: reject rounding token 0x1.8p-1074"
+   ]
+  },
+  {
+   "original": "h.lowest + h.oddBits - 1 > 1023)",
+   "mutant": "h.lowest + h.oddBits - 1 > 1024)",
+   "equivalent": null,
+   "killed_by": [
+    "unit: reject rounding token 0x1p+1024"
+   ]
+  },
+  {
+   "original": "    if (h.oddBits > bits())\n",
+   "mutant": "    if (h.oddBits > bits() + 1)\n",
+   "equivalent": null,
+   "killed_by": [
+    "unit: mp:56 refuses a 57-bit hex endpoint",
+    "unit: mp:128 refuses a 129-bit hex endpoint"
+   ]
+  },
+  {
+   "original": "    if (h.oddBits > bits())\n",
+   "mutant": "    if (h.oddBits >= bits())\n",
+   "equivalent": null,
+   "killed_by": [
+    "unit: <endpoint_guard_test crashed>"
+   ]
+  },
+  {
+   "original": "    if (!(returnTime2.leftBound() == returnTime.leftBound() && returnTime2.rightBound()",
+   "mutant": "    if (!(returnTime2.leftBound() == returnTime.leftBound() || returnTime2.rightBound()",
+   "equivalent": null,
+   "killed_by": [
+    "unit: engine c0: affine image from a different return window than the hull"
+   ]
+  },
+  {
+   "original": "      throw std::runtime_error(\"c0: affine and hull return times differ",
+   "mutant": "      (void)std::runtime_error(\"c0: affine and hull return times differ",
+   "equivalent": null,
+   "killed_by": [
+    "unit: engine c0: affine image from a different return window than the hull"
+   ]
+  },
+  {
+   "original": "      if (windowRuns_ == 1) windowRun_ = A::hull(runStart_, runEnd_);",
+   "mutant": "      if (windowRuns_ == 1) windowRun_ = A::hull(runEnd_, runEnd_);",
+   "equivalent": null,
+   "killed_by": [
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: report: crossing spread over several touching steps is one window run",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "      ++runsBefore_;\n",
+   "mutant": "",
+   "equivalent": null,
+   "killed_by": [
+    "unit: report: departure run then one counted crossing",
+    "unit: report: returns=2 on the same section counts one crossing before the window",
+    "unit: engine c0 output: crossing lines follow the tube lines",
+    "unit: engine c1 output: crossing lines follow the tube lines",
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  },
+  {
+   "original": "<< crossings.countedBefore() <<",
+   "mutant": "<< 0 <<",
+   "equivalent": null,
+   "killed_by": [
+    "unit: engine c0 output: returns=2 reports the crossing counted before the window"
+   ]
+  }
+ ]
+}

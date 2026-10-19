@@ -1,0 +1,237 @@
+{
+ "tag": "[수치] 선형 설계",
+ "candidates": [
+  {
+   "k_junction": 140,
+   "departure": 1,
+   "arrival": 15,
+   "margin": 0.06,
+   "vertices": 295,
+   "edges": 296,
+   "loops": [
+    16,
+    282
+   ],
+   "entropy_lower_bound_per_step": 0.007659231016207578,
+   "radius_min": 1.482126257676435e-11,
+   "radius_max": 7.254395505865887e-10,
+   "cycle_radius_max": 7.254395505865887e-10,
+   "slack_min": 0.0009388423865924755,
+   "slack_min_at": "N1->M-139 k=2 image-inside",
+   "slacks_negative": 0,
+   "excess_max": 0.03308991533744975,
+   "excess_max_at": "N0",
+   "edges_excess_over_0.03": 2,
+   "meta": {
+    "d_departure": 1.482126257676435e-10,
+    "d_arrival": 1.4821263179024025e-10,
+    "floor": 1.482126257676435e-11,
+    "dep_fraction": 0.5,
+    "centers": "mpmath 다중 사격(orbit_refit_mp.json)"
+   }
+  },
+  {
+   "k_junction": 144,
+   "departure": 13,
+   "arrival": 3,
+   "margin": 0.06,
+   "vertices": 303,
+   "edges": 304,
+   "loops": [
+    16,
+    298
+   ],
+   "entropy_lower_bound_per_step": 0.0073696936384425185,
+   "radius_min": 4.151418684803822e-12,
+   "radius_max": 4.465642983919887e-10,
+   "cycle_radius_max": 4.465642983919887e-10,
+   "slack_min": 0.0009389759453150015,
+   "slack_min_at": "N13->M-143 k=3 image-inside",
+   "slacks_negative": 0,
+   "excess_max": 0.017814011709150774,
+   "excess_max_at": "N0",
+   "edges_excess_over_0.03": 0,
+   "meta": {
+    "d_departure": 4.151418684803822e-11,
+    "d_arrival": 4.1514186948247504e-11,
+    "floor": 4.151418684803822e-12,
+    "dep_fraction": 0.5,
+    "centers": "mpmath 다중 사격(orbit_refit_mp.json)"
+   }
+  },
+  {
+   "k_junction": 149,
+   "departure": 8,
+   "arrival": 8,
+   "margin": 0.06,
+   "vertices": 313,
+   "edges": 314,
+   "loops": [
+    16,
+    298
+   ],
+   "entropy_lower_bound_per_step": 0.0073696936384425185,
+   "radius_min": 1.6142498673487127e-12,
+   "radius_max": 2.6126206319853037e-10,
+   "cycle_radius_max": 2.6126206319853037e-10,
+   "slack_min": 0.0009390252766834362,
+   "slack_min_at": "N8->M-148 k=2 image-inside",
+   "slacks_negative": 0,
+   "excess_max": 0.009195827132377737,
+   "excess_max_at": "N11",
+   "edges_excess_over_0.03": 0,
+   "meta": {
+    "d_departure": 1.6142498673487126e-11,
+    "d_arrival": 1.614249991774195e-11,
+    "floor": 1.6142498673487127e-12,
+    "dep_fraction": 0.5,
+    "centers": "mpmath 다중 사격(orbit_refit_mp.json)"
+   }
+  },
+  {
+   "k_junction": 150,
+   "departure": 7,
+   "arrival": 9,
+   "margin": 0.06,
+   "vertices": 315,
+   "edges": 316,
+   "loops": [
+    16,
+    314
+   ],
+   "entropy_lower_bound_per_step": 0.00710432734771763,
+   "radius_min": 2.0436908775876878e-12,
+   "radius_max": 1.9118466107477118e-10,
+   "cycle_radius_max": 1.9118466107477118e-10,
+   "slack_min": 0.000939014461875054,
+   "slack_min_at": "N7->M-149 k=2 image-inside",
+   "slacks_negative": 0,
+   "excess_max": 0.007036442727561872,
+   "excess_max_at": "N0",
+   "edges_excess_over_0.03": 0,
+   "meta": {
+    "d_departure": 2.0436908775876875e-11,
+    "d_arrival": 2.0436910089258752e-11,
+    "floor": 2.0436908775876878e-12,
+    "dep_fraction": 0.5,
+    "centers": "mpmath 다중 사격(orbit_refit_mp.json)"
+   }
+  },
+  {
+   "k_junction": 157,
+   "departure": 0,
+   "arrival": 0,
+   "margin": 0.06,
+   "vertices": 329,
+   "edges": 330,
+   "loops": [
+    16,
+    314
+   ],
+   "entropy_lower_bound_per_step": 0.00710432734771763,
+   "radius_min": 5.237547311561126e-13,
+   "radius_max": 1.0214947756855203e-10,
+   "cycle_radius_max": 1.0214947756855203e-10,
+   "slack_min": 0.0009388429428076606,
+   "slack_min_at": "N0->M-156 k=2 image-inside",
+   "slacks_negative": 0,
+   "excess_max": 0.003595428135807837,
+   "excess_max_at": "N11",
+   "edges_excess_over_0.03": 0,
+   "meta": {
+    "d_departure": 5.237547311561126e-12,
+    "d_arrival": 5.237547604373501e-12,
+    "floor": 5.237547311561126e-13,
+    "dep_fraction": 0.5,
+    "centers": "mpmath 다중 사격(orbit_refit_mp.json)"
+   }
+  },
+  {
+   "k_junction": 160,
+   "departure": 13,
+   "arrival": 3,
+   "margin": 0.06,
+   "vertices": 335,
+   "edges": 336,
+   "loops": [
+    16,
+    330
+   ],
+   "entropy_lower_bound_per_step": 0.00686007949323883,
+   "radius_min": 3.486517603925016e-13,
+   "radius_max": 3.7504149926560997e-11,
+   "cycle_radius_max": 3.7504149926560997e-11,
+   "slack_min": 0.0009389485391604335,
+   "slack_min_at": "N13->M-159 k=3 image-inside",
+   "slacks_negative": 0,
+   "excess_max": 0.0014960877265424656,
+   "excess_max_at": "N0",
+   "edges_excess_over_0.03": 0,
+   "meta": {
+    "d_departure": 3.486517603925016e-12,
+    "d_arrival": 3.4865176123555695e-12,
+    "floor": 3.486517603925016e-13,
+    "dep_fraction": 0.5,
+    "centers": "mpmath 다중 사격(orbit_refit_mp.json)"
+   }
+  },
+  {
+   "k_junction": 165,
+   "departure": 8,
+   "arrival": 8,
+   "margin": 0.06,
+   "vertices": 345,
+   "edges": 346,
+   "loops": [
+    16,
+    330
+   ],
+   "entropy_lower_bound_per_step": 0.00686007949323883,
+   "radius_min": 1.3557797901604915e-13,
+   "radius_max": 2.194293661608198e-11,
+   "cycle_radius_max": 2.194293661608198e-11,
+   "slack_min": 0.0009389712597582811,
+   "slack_min_at": "N8->M-164 k=3 image-inside",
+   "slacks_negative": 0,
+   "excess_max": 0.0007723411865824855,
+   "excess_max_at": "N11",
+   "edges_excess_over_0.03": 0,
+   "meta": {
+    "d_departure": 1.3557797901604915e-12,
+    "d_arrival": 1.3557798946529664e-12,
+    "floor": 1.3557797901604915e-13,
+    "dep_fraction": 0.5,
+    "centers": "mpmath 다중 사격(orbit_refit_mp.json)"
+   }
+  },
+  {
+   "k_junction": 175,
+   "departure": 14,
+   "arrival": 2,
+   "margin": 0.06,
+   "vertices": 365,
+   "edges": 366,
+   "loops": [
+    16,
+    362
+   ],
+   "entropy_lower_bound_per_step": 0.006425156221324475,
+   "radius_min": 7.141655201317173e-14,
+   "radius_max": 7.314964579522131e-12,
+   "cycle_radius_max": 7.314964579522131e-12,
+   "slack_min": 0.000938102215826353,
+   "slack_min_at": "N14->M-174 k=2 image-inside",
+   "slacks_negative": 0,
+   "excess_max": 0.0002574700339901545,
+   "excess_max_at": "N11",
+   "edges_excess_over_0.03": 0,
+   "meta": {
+    "d_departure": 7.141655665959233e-13,
+    "d_arrival": 7.141655201317173e-13,
+    "floor": 7.141655201317173e-14,
+    "dep_fraction": 0.5,
+    "centers": "mpmath 다중 사격(orbit_refit_mp.json)"
+   }
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+build/
+results/**/raw-local/
+tracks/T3-cap/third_party/capd/
+.DS_Store

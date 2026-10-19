@@ -1,0 +1,36 @@
+{
+ "tag": "재계산·엄밀(대칭 항등식, 시험 대상 V5 엔진)",
+ "t_end": "3/2",
+ "steps": 837,
+ "prec_bits": 128,
+ "order": 24,
+ "checks": {
+  "rotation_first: T0(t) = J x(t)": {
+   "overlap": true,
+   "max_rad_enclosure": 1.0940853323142263e-10
+  },
+  "scaling_first: T2(t) = s(x(t)) - 1.5 t f(x(t))": {
+   "overlap": true,
+   "max_rad_enclosure": 7.06684445361816e-06
+  },
+  "boost_first: T3(t) = (w t, w)": {
+   "overlap": true,
+   "max_rad_enclosure": 5.054475094761271e-12
+  },
+  "rotation_second: W00(t) = -x(t) + T1(t)": {
+   "overlap": true,
+   "max_rad_enclosure": 7.164789991520593e-06
+  },
+  "boost_second: W33(t) = 0": {
+   "overlap": true,
+   "max_rad_enclosure": 1.109119289195281e-11
+  }
+ },
+ "negative_controls_rejected": {
+  "rotation_first_sign_flip": true,
+  "rotation_second_wrong(+x)": true,
+  "scaling_first_wrong_exponent(-1/2 t)": true
+ },
+ "all_pass": true,
+ "seconds": 33.7
+}

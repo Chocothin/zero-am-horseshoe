@@ -1,0 +1,87 @@
+{
+ "tag": "R1-07: V2 엄밀성 변이를 시험이 잡는가",
+ "target": "rigorous_tube.py",
+ "mutants": {
+  "step_remainder_removed": {
+   "old": "newq.append(Aff(accq.c, accq.g, accq.r + remQ[c] * Iord))\n            newv.append(Aff(accv.c, accv.g, accv.r + remV[c] * Iord))",
+   "new": "newq.append(Aff(accq.c, accq.g, accq.r))\n            newv.append(Aff(accv.c, accv.g, accv.r))",
+   "runs": {
+    "test_tube_spec": {
+     "exit": 0,
+     "tail": "......                                                                   [100%]\n6 passed in 0.12s",
+     "seconds": 0.2
+    },
+    "test_tube_rigor_spec": {
+     "exit": 1,
+     "tail": "w0, w1 = res[\"window\"]\n>       assert w0 <= tau <= w1\nE       assert Fraction(24683177554534693509553941111836437756590561, 89202980794122492566142873090593446023921664) <= Fraction(5352310945634688993242005, 19342813113834066795298816)\n\ntests/test_tube_rigor_spec.py:43: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_tube_rigor_spec.py::test_point_flight_encloses_reference_return_time_and_distances[8]\n1 failed, 3 passed in 4.74s",
+     "seconds": 4.9
+    },
+    "rigorous_controls": {
+     "exit": 0,
+     "tail": "per axis along sign(grad tau)=[1, 1, -1, 1]\",\n   \"rejected\": true,\n   \"reason\": \"window [0.27670799070593355, 0.2767079909972571] vs unshifted [0.2767079902684478, 0.27670799056077244]\"\n  },\n  {\n   \"control\": \"delta claim raised to (1+1e-12) x my bound\",\n   \"rejected\": true\n  },\n  {\n   \"control\": \"R claim lowered to (1-1e-12) x my bound\",\n   \"rejected\": true\n  },\n  {\n   \"control\": \"t_min claim raised to (1+1e-12) x my bound\",\n   \"rejected\": true\n  }\n ],\n \"all_rejected\": true,\n \"seconds\": 1.2\n}",
+     "seconds": 1.3
+    }
+   },
+   "g5": {
+    "random_points": 148,
+    "random_caught": 0,
+    "vertex_points": 160,
+    "vertex_caught": 0,
+    "failed_checks": {}
+   },
+   "caught": true,
+   "caught_by_existing_controls": false,
+   "caught_by_existing_spec": false
+  },
+  "transversality_check_removed": {
+   "old": "if not adot < 0:\n                raise FlightFailure(\"crossing not certified transversal (dA/dt may vanish)\")",
+   "new": "pass",
+   "runs": {
+    "test_tube_spec": {
+     "exit": 0,
+     "tail": "......                                                                   [100%]\n6 passed in 0.12s",
+     "seconds": 0.3
+    },
+    "test_tube_rigor_spec": {
+     "exit": 1,
+     "tail": "setattr(rt, \"adot_range\", lambda *a, **k: original(*a, **k).union(arb(1)))\n>       with pytest.raises(rt.FlightFailure, match=\"transversal\"):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE FlightFailure\n\ntests/test_tube_rigor_spec.py:55: Failed\n=========================== short test summary info ============================\nFAILED tests/test_tube_rigor_spec.py::test_crossing_without_certified_transversality_is_rejected\n1 failed, 3 passed in 4.75s",
+     "seconds": 4.9
+    },
+    "rigorous_controls": {
+     "exit": 0,
+     "tail": "i per axis along sign(grad tau)=[1, 1, -1, 1]\",\n   \"rejected\": true,\n   \"reason\": \"window [0.276707990705433, 0.27670799099775767] vs unshifted [0.2767079902684478, 0.27670799056077244]\"\n  },\n  {\n   \"control\": \"delta claim raised to (1+1e-12) x my bound\",\n   \"rejected\": true\n  },\n  {\n   \"control\": \"R claim lowered to (1-1e-12) x my bound\",\n   \"rejected\": true\n  },\n  {\n   \"control\": \"t_min claim raised to (1+1e-12) x my bound\",\n   \"rejected\": true\n  }\n ],\n \"all_rejected\": true,\n \"seconds\": 1.2\n}",
+     "seconds": 1.3
+    }
+   },
+   "g5": {
+    "random_points": 148,
+    "random_caught": 0,
+    "vertex_points": 160,
+    "vertex_caught": 0,
+    "failed_checks": {}
+   },
+   "caught": true,
+   "caught_by_existing_controls": false,
+   "caught_by_existing_spec": false
+  }
+ },
+ "original": {
+  "test_tube_spec": {
+   "exit": 0,
+   "tail": "......                                                                   [100%]\n6 passed in 0.11s",
+   "seconds": 0.3
+  },
+  "test_tube_rigor_spec": {
+   "exit": 0,
+   "tail": "....                                                                     [100%]\n4 passed in 4.75s",
+   "seconds": 4.9
+  },
+  "rigorous_controls": {
+   "exit": 0,
+   "tail": "i per axis along sign(grad tau)=[1, 1, -1, 1]\",\n   \"rejected\": true,\n   \"reason\": \"window [0.276707990705433, 0.27670799099775767] vs unshifted [0.2767079902684478, 0.27670799056077244]\"\n  },\n  {\n   \"control\": \"delta claim raised to (1+1e-12) x my bound\",\n   \"rejected\": true\n  },\n  {\n   \"control\": \"R claim lowered to (1-1e-12) x my bound\",\n   \"rejected\": true\n  },\n  {\n   \"control\": \"t_min claim raised to (1+1e-12) x my bound\",\n   \"rejected\": true\n  }\n ],\n \"all_rejected\": true,\n \"seconds\": 1.2\n}",
+   "seconds": 1.3
+  }
+ },
+ "original_pass": true,
+ "seconds": 32.9
+}

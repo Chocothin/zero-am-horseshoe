@@ -1,0 +1,120 @@
+# Numbers typeset in the paper (key = argument of \cst in the LaTeX source).
+# direction: lower = true value >= printed; upper = true value <= printed; equal = exact;
+#            estimate = descriptive value rounded to nearest, not used as a bound.
+# source: result file#JSON pointer (RFC 6901); sqrt(...), (a / b), (a + b), (a - b) combine entries exactly.
+key	printed	direction	source	quantity
+R	7.419986043806	upper	results/2026-10-17-T6-horseshoe/theorem_A.json#/size_upper_bound_R	upper bound on the mutual distances r_ij along flow orbits through Lambda (h=-1/2)
+arbR	7.274514881157	upper	results/2026-10-17-T11-arbcert/theorem_claims.json#/measured/R/exact	second program: upper bound on r_ij from the flow tubes (M+7>M+8, r13, h=-1/2)
+arbamax	0.881657370529	upper	results/2026-10-17-T11-arbcert/theorem_claims.json#/measured/a_max/exact	second program: upper bound on max a*_e
+arbbmin	1.126057165084	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/measured/b_min/exact	second program: lower bound on min b*_e
+arbboxsec	2026.9	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/arbboxsec	second program: total CPU time of the box enclosures (s)
+arbcover	0.061029134539	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/measured/cover_margin/exact	second program: minimum covering margin over the 314 edges (M-148>M-147)
+arbcycsep	0.565159173410	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/claimed/A6_gap	second program: lower bound on the separation of the cycle h-sets
+arbdegminus	2	equal	results/2026-10-17-T11-arbcert/theorem_claims.json#/degrees/-1	second program: number of coverings of degree -1
+arbdegplus	312	equal	results/2026-10-17-T11-arbcert/theorem_claims.json#/degrees/1	second program: number of coverings of degree +1 (signs from the diagonal of the linear design)
+arbdelta	0.217939990832	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/measured/delta/exact	second program: lower bound on r_ij from the flow tubes (N1>N2, r12, h=-1/2)
+arbedges	314	equal	results/2026-10-17-T11-arbcert/theorem_claims.json#/edges	second program: number of edges decided
+arbgone	0.118342629471	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/claimed/g1	second program: lower bound on g_e(1)
+arbmsep	0.678638874080	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/claimed/A3_gap	second program: lower bound on the separation of N_{v*}
+arbmus	0.012742629471	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/checks/mu_s_margin/measured	second program: lower bound on the cone margin mu_s - max a*_e (M-148>M-147)
+arbmuu	0.009357165084	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/checks/mu_u_margin/measured	second program: lower bound on the cone margin min b*_e - mu_u (M+146>M+147)
+arbtmin	0.276707990268	lower	results/2026-10-17-T11-arbcert/theorem_claims.json#/measured/t_min/exact	second program: lower bound on the return time from the flow tubes (N1>N2, h=-1/2)
+arbtubesec	420.6	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/arbtubesec	second program: total CPU time of the flow tubes (s)
+bcutcount	61	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/bcutcount	number of edges with cone upper bound b*_e above 8/5
+bmax	96.62	upper	results/2026-10-18-T8-synthesis/derived_stats.json#/bmax	maximum of the cone upper bounds b*_e over all edges
+branchmin	0.7506	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/branchmin	minimum over all pieces of the lower bound on the branch value dH/dp_y
+classa	156	equal	((results/2026-10-15-T6-horseshoe/graph_design.json#/summary/vertices - 1) / 2)	size of the smaller class of Sigma_G (cycle 8 + chain 148)
+classb	157	equal	((results/2026-10-15-T6-horseshoe/graph_design.json#/summary/vertices + 1) / 2)	size of the larger class of Sigma_G (cycle 8 + chain 149)
+cooverfig	2.5\times10^{2	estimate	results/2026-10-17-T3-cap/benchmark.json#/tables/1/rows/2/c1_overestimation	overestimation factor of the C^1 derivative enclosure on the half figure-eight segment (S+ to S-, rho=1e-8)
+cowidmax	9.3\times10^{7	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/cowidmax	maximum over rows of the width of the C^1 derivative image divided by r
+cowidmin	2.3\times10^{4	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/cowidmin	minimum over rows of the width of the C^1 derivative image divided by r
+cozratmax	2731	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/cozratmax	maximum over rows of the same ratio as cozratmin
+cozratmin	4.5	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/cozratmin	minimum over rows of (single-piece C^0 image half-width / linear half-width, maximum over components)
+cs	3.078	upper	sqrt((1 / results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/derived_constants/eps))	stable constant c_s >= eps^(-1/2)
+ctlarbedge	1884	equal	results/2026-10-17-T11-arbcert/controls.json#/edge_controls/controls	second program: number of edge-level negative controls
+ctlarbthm	47	equal	results/2026-10-17-T11-arbcert/controls.json#/theorem_controls	second program: number of theorem-level negative controls
+ctledge	942	equal	results/2026-10-17-T6-horseshoe/stored_controls.json#/summary/controls_total	number of per-covering negative controls
+ctlstruct	112	equal	results/2026-10-17-T6-horseshoe/negative_controls.json#/rows	number of structural negative controls recomputed by the engine
+cu	3.252	upper	sqrt((results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/claimed/mu_u / results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/derived_constants/eps))	unstable constant c_u >= (mu_u/eps)^(1/2)
+cycdefect	1.13\times10^{-15	estimate	results/2026-10-15-T6-horseshoe/orbit_refit_mp.json#/cycle/max_defect	maximum defect of the refined centres (cycle)
+cycsep	0.56516	estimate	results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/cycle_min_separation/exact	minimum separation of the hulls of the 16 cycle h-sets (N3, N13; descriptive)
+degminus	2	equal	results/2026-10-17-T6-horseshoe/theorem_A.json#/degree_counts/-1	number of covering relations of degree -1
+degplus	312	equal	results/2026-10-17-T6-horseshoe/theorem_A.json#/degree_counts/1	number of covering relations of degree +1
+delta	0.217857228763	lower	results/2026-10-17-T6-horseshoe/theorem_A.json#/collision_distance_lower_bound_delta	lower bound on the mutual distances r_ij along flow orbits through Lambda (h=-1/2)
+designmargin	0.06	estimate	results/2026-10-15-T6-horseshoe/graph_design.json#/summary/margin	graph design margin m
+diagcyc	16	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/diagcyc	number of cycle steps measured in the C^0 diagnosis
+diaghom	80	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/diaghom	number of homoclinic steps measured in the C^0 diagnosis
+diagkmax	39	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/diagkmax	maximum homoclinic step index k
+diagkmin	-40	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/diagkmin	minimum homoclinic step index k
+discmin	0.5634	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/discmin	minimum over all pieces of the lower bound on the discriminant D
+engsec	15743.5	estimate	results/2026-10-17-T6-horseshoe/coverings_summary.json#/total/engine_seconds_total	first program: total engine time (s)
+eps	0.1056	equal	results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/derived_constants/eps	eps = min(mu_u - 1, 1 - mu_s) (exact)
+excessmax	0.009196	estimate	results/2026-10-15-T6-horseshoe/graph_design.json#/summary/excess_max	maximum excess of the predicted enclosure
+excessthr	0.03	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/excessthr	threshold of predicted excess in the junction depth scan (read from the record key edges_excess_over_0.03)
+excuredges	39	equal	results/2026-10-17-T6-horseshoe/coverings_summary.json#/segments/excursion |k|<20/edges	number of edges in the excursion (|k| < 20)
+excurk	20	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/excurk	the bound 20 in |k| < 20 defining the excursion
+exitmin	0.0595	estimate	results/2026-10-17-T6-horseshoe/coverings_summary.json#/total/exit_face_margin_min	minimum exit margin (first program)
+feightk	0.354	estimate	results/2026-10-17-T3-cap/milestone_figure8.json#/cases/0/k_radius_over_rho	figure-eight orbit: Krawczyk image radius / box radius (main case)
+fig8dist	1.73168936	lower	results/2026-10-15-T3-cap/milestone_figure8.json#/cases/0/tube_min_distance_lower	figure-eight orbit: lower bound on mutual distances along the flow tube of the fixed-point box (h=-1/2)
+fusedold	1204	equal	results/2026-10-17-T3-cap/build_flags.json#/legacy_for_comparison/native/t3cap_engine	number of scalar fused instructions in the earlier arm64 engine
+g5centres	314	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/g5centres	second program: number of box-centre points in the sampling plan
+g5other	58	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/g5other	second program: number of further points in the sampling plan (convergence checks and axes)
+g5random	1052	equal	results/2026-10-17-T11-arbcert/g5_soundness.json#/random_points	second program: number of random points in the sampling plan
+geightda	5.078\times10^{-6	estimate	results/2026-10-17-T7-hyperbolic/g8_cones.json#/summary/max_abs_diff_lower_a	other-arithmetic rerun: maximum |delta a*|
+geightdb	2.475\times10^{-6	estimate	results/2026-10-17-T7-hyperbolic/g8_cones.json#/summary/max_abs_diff_upper_b	other-arithmetic rerun: maximum |delta b*|
+geightmarg	3.248\times10^{-6	estimate	results/2026-10-17-T6-horseshoe/compare_g8_x86filib_mp96.json#/summary/max_abs_margin_change	other-arithmetic rerun: maximum change of margins
+geightwmax	1.011	estimate	results/2026-10-17-T6-horseshoe/compare_g8_x86filib_mp96.json#/summary/width_ratio_max	other-arithmetic rerun: maximum width ratio
+geightwmin	0.9903	estimate	results/2026-10-17-T6-horseshoe/compare_g8_x86filib_mp96.json#/summary/width_ratio_min	other-arithmetic rerun: minimum width ratio
+georandom	3000	equal	results/2026-10-15-T5-geom/good_set_survival.json#/starts_in_G	number of random orbits (starting in G) on which the pointwise negative curvature criterion was tested
+gonemin	0.1057	estimate	results/2026-10-17-T7-hyperbolic/cones.json#/summary/min_margin_mu1	minimum cone margin g_e(1)
+homangone	13.69	estimate	results/2026-10-15-T2-num/homoclinic/HH2024-18.json#/homoclinic_points/2/principal_angles_deg/0	principal angle 1 between stable and unstable tangent spaces at y* (main evidence point HH2024-5181)
+homangtwo	14.13	estimate	results/2026-10-15-T2-num/homoclinic/HH2024-18.json#/homoclinic_points/2/principal_angles_deg/1	principal angle 2 between stable and unstable tangent spaces at y* (main evidence point HH2024-5181)
+homdefect	4.05\times10^{-15	estimate	results/2026-10-15-T6-horseshoe/orbit_refit_mp.json#/homoclinic/max_defect	maximum defect of the refined centres (homoclinic)
+joffset	1.614\times10^{-11	estimate	results/2026-10-15-T6-horseshoe/graph_design.json#/summary/meta/d_departure	junction offset d (departure side)
+kjunction	149	equal	results/2026-10-15-T6-horseshoe/graph_design.json#/k_junction	junction depth K
+lams	0.9458	upper	sqrt(results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/claimed/mu_s)	stable contraction bound lambda_s >= mu_s^(1/2)
+lamu	1.0567	lower	sqrt(results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/claimed/mu_u)	unstable expansion bound lambda_u <= mu_u^(1/2)
+lnrho	0.0073696936384425343859428	lower	(results/2026-10-17-T6-horseshoe/theorem_A.json#/claimed/ln_rho + results/2026-10-17-T6-horseshoe/theorem_A.json#/claims/6/margin/enclosure/0)	lower bound on log rho (topological entropy per collinear configuration; partial sum of 30 terms)
+looplong	298	equal	results/2026-10-17-T6-horseshoe/theorem_A.json#/loops/1	length of the homoclinic loop
+loopshort	16	equal	results/2026-10-17-T6-horseshoe/theorem_A.json#/loops/0	length of the cycle loop
+maxastar	0.89431077	estimate	results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/max_lower_a/exact	maximum of a*_e recomputed on the 314 edges (M-147>M-146; descriptive)
+minbstar	1.11676510	estimate	results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/min_upper_b/exact	minimum of b*_e recomputed on the 314 edges (M+145>M+146; descriptive)
+msep	0.6786	estimate	results/2026-10-17-T6-horseshoe/theorem_A.json#/m0_min_separation/exact	minimum separation of the hull of the marker h-set N_{M+0} from the other 312 hulls (normal coordinates; descriptive)
+mus	0.8944	upper	results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/max_lower_a/exact	upper Gershgorin constant mu_s (a*_e < mu_s on every edge, strict)
+mutarbk	386	equal	results/2026-10-17-T11-arbcert/mutation_audit.json#/killed	second program: number of mutations detected
+mutarbn	403	equal	results/2026-10-17-T11-arbcert/mutation_audit.json#/mutants	second program: total number of mutations
+mutsevk	194	equal	results/2026-10-17-T7-hyperbolic/mutation_audit.json#/killed	cone decision: number of mutations detected
+mutsevn	201	equal	results/2026-10-17-T7-hyperbolic/mutation_audit.json#/mutants	cone decision: total number of mutations
+mutsixk	287	equal	results/2026-10-17-T6-horseshoe/mutation_audit.json#/killed	first program covering decision: number of mutations detected
+mutsixn	294	equal	results/2026-10-17-T6-horseshoe/mutation_audit.json#/mutants	first program covering decision: total number of mutations
+muu	1.1167	lower	results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/min_upper_b/exact	lower Gershgorin constant mu_u (b*_e > mu_u on every edge, strict)
+nedges	314	equal	results/2026-10-17-T7-hyperbolic/theorem_Aprime.json#/edges	number of covering relations (graph edges)
+nintervals	26690	equal	results/2026-10-17-T6-horseshoe/compare_strict_rebuild.json#/summary/intervals_compared	number of enclosure intervals compared between the earlier and the strict build
+nrequests	6100	equal	results/2026-10-17-T7-hyperbolic/request_token_audit.json#/summary/requests	input token check: number of requests
+ntokens	1094456	equal	results/2026-10-17-T7-hyperbolic/request_token_audit.json#/summary/endpoint_tokens	input token check: number of endpoint tokens
+nverts	313	equal	results/2026-10-15-T6-horseshoe/graph_design.json#/summary/vertices	number of h-sets (graph vertices)
+orbmufour	-0.000979	estimate	results/2026-10-15-T2-num/section_candidates.json#/0/multipliers_Pm/3/0	HH2024-18: multiplier 4 of the period map
+orbmuone	-1021.58	estimate	results/2026-10-15-T2-num/section_candidates.json#/0/multipliers_Pm/0/0	HH2024-18: multiplier 1 of the period map
+orbmuthree	0.0840	estimate	results/2026-10-15-T2-num/section_candidates.json#/0/multipliers_Pm/2/0	HH2024-18: multiplier 3 of the period map
+orbmutwo	11.905	estimate	results/2026-10-15-T2-num/section_candidates.json#/0/multipliers_Pm/1/0	HH2024-18: multiplier 2 of the period map
+orbperiod	67.979	estimate	results/2026-10-15-T2-num/section_candidates.json#/0/cycle_time	HH2024-18: period at h=-1/2
+orbrmin	0.2180	estimate	results/2026-10-15-T2-num/section_candidates.json#/0/min_distance_cycle	HH2024-18: minimum mutual distance along the periodic orbit
+radmax	2.613\times10^{-10	estimate	results/2026-10-15-T6-horseshoe/graph_design.json#/summary/radius_max	maximum h-set radius
+radmin	1.614\times10^{-12	estimate	results/2026-10-15-T6-horseshoe/graph_design.json#/summary/radius_min	minimum h-set radius
+rho	1.007396916664634	lower	results/2026-10-17-T6-horseshoe/theorem_A.json#/rho_lower_bound	lower bound on the root rho of rho^-16 + rho^-298 = 1 (80 steps of exact rational bisection)
+samprand	1424	equal	results/2026-10-17-T11-arbcert/g5_soundness.json#/points_judged	second program: number of image sample points (decided)
+sampseven	314000	equal	results/2026-10-17-T7-hyperbolic/g5_derivative.json#/summary/points	number of sample points for the derivative enclosures
+sampsix	376800	equal	results/2026-10-18-T8-synthesis/derived_stats.json#/sampsix	first program: number of sample points for the image enclosures
+sampsixmarg	6.081\times10^{-7	estimate	results/2026-10-17-T6-horseshoe/g5_soundness.json#/summary/min_closest_relative_margin	minimum relative margin of the image samples
+sampvert	5024	equal	results/2026-10-17-T11-arbcert/g5_vertex_soundness.json#/points_judged	second program: number of vertex sample points
+secondgap	0.2767	estimate	results/2026-10-17-T6-horseshoe/coverings_summary.json#/total/second_zero_gap_min	minimum gap between the upper end of the c1 return window and the lower end of the second-zero window
+slackmin	9.39\times10^{-4	estimate	results/2026-10-15-T6-horseshoe/graph_design.json#/summary/slack_min	minimum linear slack beyond the design margin
+stabmin	0.0572	estimate	results/2026-10-17-T6-horseshoe/coverings_summary.json#/total/stable_margin_min	minimum stable margin (first program)
+subdivmax	4.55\times10^{4	estimate	(results/2026-10-18-T8-synthesis/derived_stats.json#/cozratmax / results/2026-10-15-T6-horseshoe/graph_design.json#/summary/margin)	estimated pieces per axis needed to keep margin m: (maximum over rows of C^0 image half-width / linear half-width) / m
+tendmargin	1.2\times10^{-4	estimate	results/2026-10-18-T8-synthesis/derived_stats.json#/tendmargin	minimum difference between the lower bound on t_end of the flow tube and the upper end of the return window
+tmin	0.276707990268	lower	results/2026-10-17-T6-horseshoe/theorem_A.json#/return_time_lower_bound	lower bound on the time between consecutive collinear configurations (h=-1/2)
+weylchecks	942	equal	results/2026-10-17-T7-hyperbolic/g8_cones.json#/summary/weyl_checks	number of decisions of the independent cone check
+xwidthmax	1.499\times10^{7	estimate	results/2026-10-17-T11-arbcert/g8_capd_crosscheck_2026-10-17.json#/width_ratio_max	cross-check: maximum width ratio (first / second program)
+xwidthmin	546.5	estimate	results/2026-10-17-T11-arbcert/g8_capd_crosscheck_2026-10-17.json#/width_ratio_min	cross-check: minimum width ratio (first / second program)
+ystarpx	-0.769321563140	estimate	results/2026-10-15-T6-horseshoe/orbit_refit_mp.json#/y_star_mp/1	p_x coordinate of the symmetric homoclinic point y* (12 digits)
+ystarr	2.691108356459	estimate	results/2026-10-15-T6-horseshoe/orbit_refit_mp.json#/y_star_mp/0	r coordinate of the symmetric homoclinic point y* (12 digits)
